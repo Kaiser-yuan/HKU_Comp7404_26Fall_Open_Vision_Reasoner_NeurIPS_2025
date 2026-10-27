@@ -1,0 +1,57 @@
+{
+  "total": 100,
+  "successful": 100,
+  "original_conservative_matches": 26,
+  "reviewed_final_answer_matches": 28,
+  "reviewed_final_answer_match_rate": 0.28,
+  "correct_ids": [
+    "40",
+    "246",
+    "302",
+    "336",
+    "465",
+    "633",
+    "667",
+    "689",
+    "903",
+    "1052",
+    "1296",
+    "1324",
+    "1401",
+    "1414",
+    "1618",
+    "1748",
+    "2149",
+    "2176",
+    "2221",
+    "2238",
+    "2267",
+    "2529",
+    "2536",
+    "2557",
+    "2713",
+    "2725",
+    "2760",
+    "2926"
+  ],
+  "truncated_ids": [
+    "1542",
+    "2336"
+  ],
+  "original_extraction_failure_ids": [
+    "51",
+    "601",
+    "1542",
+    "2336"
+  ],
+  "unresolved_answer_ids": [
+    "1542",
+    "2336"
+  ],
+  "sum_inference_seconds": 853.5586504135281,
+  "median_inference_seconds": 6.797286416403949,
+  "total_generated_tokens": 57334,
+  "scope": "100-question pilot; final-answer equivalence review, NOT official scoring or reasoning validation",
+  "protocol": "boxed extraction; whole-response simple answer fallback; unique option-content mapping; exact/rational comparison",
+  "source_predictions_sha256": "c0bbd2e15a70b37900a169973348a3da1b05c2215c4c97c105773fea252e19e1"
+}

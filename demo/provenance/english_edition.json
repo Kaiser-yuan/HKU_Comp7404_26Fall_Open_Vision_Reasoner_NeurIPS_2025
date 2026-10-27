@@ -1,0 +1,9 @@
+{
+  "source_archive": "OVR_\u539f\u7248\u56de\u6eda_\u79fb\u9664\u65b0\u589eGPU\u5165\u53e3_20261027.zip",
+  "source_archive_sha256": "a2222743e1f7cc89be269bab95ae5b62b325f31fa6af180c09235b9945df3e20",
+  "basis": "Rolled-back v1 with added GPU launch material removed",
+  "original_source_files_byte_identical": 644,
+  "new_inference_or_training": false,
+  "qwen_budget20_comparison_included": false,
+  "english_scope": "Primary overview, interactive landing page, walkthrough, results, limitations, source guide, and offline results wrapper. Archived raw evidence and original team reports keep their original language."
+}

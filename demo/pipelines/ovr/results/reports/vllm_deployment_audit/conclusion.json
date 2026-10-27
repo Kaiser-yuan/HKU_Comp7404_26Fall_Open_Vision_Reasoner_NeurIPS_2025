@@ -1,0 +1,142 @@
+{
+  "checked_utc": "2026-10-22T14:57:24.448111+00:00",
+  "diagnostic_only": true,
+  "formal_generations": 0,
+  "unique_diagnostic_question_ids": [
+    "40",
+    "51"
+  ],
+  "conditions": [
+    {
+      "namespace": "vllm_deployment_audit",
+      "file": "coldstart_defaults_official.jsonl",
+      "n": 2,
+      "correct": 2,
+      "normal_stop": 2,
+      "truncated": 0,
+      "question_ids": [
+        "40",
+        "51"
+      ],
+      "output_tokens": [
+        2569,
+        1089
+      ]
+    },
+    {
+      "namespace": "vllm_deployment_audit",
+      "file": "rl_defaults_official.jsonl",
+      "n": 2,
+      "correct": 1,
+      "normal_stop": 1,
+      "truncated": 1,
+      "question_ids": [
+        "40",
+        "51"
+      ],
+      "output_tokens": [
+        3667,
+        4096
+      ]
+    },
+    {
+      "namespace": "vllm_deployment_audit",
+      "file": "rl_greedy_official.jsonl",
+      "n": 2,
+      "correct": 0,
+      "normal_stop": 0,
+      "truncated": 2,
+      "question_ids": [
+        "40",
+        "51"
+      ],
+      "output_tokens": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "namespace": "vllm_length_audit",
+      "file": "rl_defaults_official.jsonl",
+      "n": 1,
+      "correct": 1,
+      "normal_stop": 1,
+      "truncated": 0,
+      "question_ids": [
+        "51"
+      ],
+      "output_tokens": [
+        4673
+      ]
+    },
+    {
+      "namespace": "cloud_diag_tf_checkpoint_defaults_20261022",
+      "file": "rl.jsonl",
+      "n": 2,
+      "correct": 0,
+      "normal_stop": 0,
+      "truncated": 2,
+      "question_ids": [
+        "40",
+        "51"
+      ],
+      "output_tokens": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "length_probe": {
+    "completed_http_generations": 1,
+    "formal_pilot_started": false,
+    "all_servers_stopped": true,
+    "matching_prefix_tokens": 67,
+    "entire_4096_token_prefix_matches": false,
+    "same_prompt_token_ids": true,
+    "output_tokens": 4673,
+    "finish_reason": "stop",
+    "finished_utc": "2026-10-22T14:47:06.468208+00:00"
+  },
+  "checkpoint_defaults": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 40,
+    "repetition_penalty": 1.0
+  },
+  "findings": [
+    "Correct pinned checkpoint path verified through server model metadata; original weight hashes preserved.",
+    "All seven vLLM generation prompt token IDs match the corresponding Transformers processor input, including image placeholders and think prefill. This does not prove identical vision features or attention.",
+    "Tokenizer and processor template files differ, but rendered input token IDs match on the two actual questions; template override branch was not needed.",
+    "RL greedy repeats and hits 4096 tokens on both backends. Backend substitution alone does not resolve this behavior.",
+    "Checkpoint-default sampling reduces truncation in vLLM on these two questions, but RL question 51 still hits 4096 tokens.",
+    "RL question 51 stops at 4673 tokens in a separate 8192-token probe. Only 67 initial generated tokens match the earlier run; this is not a continuation or proof that length alone fixes the issue.",
+    "The 8192-token answer is officially correct but includes self-reported inability to see the image and guesses. Correctness does not establish grounded visual reasoning.",
+    "No change to frozen formal protocol and no 100-question evaluation started."
+  ],
+  "limits": [
+    "Only two unique diagnostic questions; no accuracy estimate or paper replication claim.",
+    "Different sampling RNG implementations, per-request seeds, server cache state, and numerical kernels preclude bitwise trajectory comparison.",
+    "Latency definitions and warmed caches differ; not a throughput benchmark.",
+    "Do not pool the 4k and 8k outputs or select best answers as formal results."
+  ],
+  "next_step": "Keep formal evaluation held. Agree one decoding and length protocol with teammate and rescore all comparable model outputs uniformly before any newly authorized run.",
+  "gpu_state": {
+    "checked_utc": "2026-10-22T14:47:06+00:00",
+    "all_servers_stopped": true,
+    "later_nvidia_smi_utilization_percent": 0,
+    "later_nvidia_smi_used_mib": 0,
+    "user_notified_to_stop_gpu": true,
+    "instance_power_or_billing_changed_by_agent": false
+  },
+  "archive": {
+    "path": "artifacts/OVR_VLLM_DEPLOYMENT_AUDIT_20261022.zip",
+    "sha256": "6f6d6e397fe0424e4c525a14df4041f9a320b9b27f83b4d1ed1cae0a0960289e",
+    "member_hashes_verified_on_mac": 38
+  },
+  "sources": [
+    "https://huggingface.co/Kangheng/OVR-7B-RL#model-deployment",
+    "https://huggingface.co/Kangheng/OVR-7B-ColdStart#model-deployment",
+    "https://docs.vllm.ai/en/v0.11.0/serving/openai_compatible_server.html",
+    "https://docs.vllm.ai/en/v0.11.0/getting_started/installation/gpu.html"
+  ]
+}

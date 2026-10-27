@@ -1,0 +1,65 @@
+{
+  "protocol_id": "ovr-shared100-decoding-diagnostic-sampling-v1",
+  "status": "Isolated decoding diagnostic; not a frozen formal evaluation protocol",
+  "purpose": "Same first two engineering questions per checkpoint; change decoding only",
+  "shared_dir": "workstreams/shared_test100",
+  "inputs_sha256": "b6d69309e6fc080da3ffb54286f77e2bfa1e41cc2f4dd05f59d2b1d27ebf3598",
+  "references_sha256": "131b3b901071f9b4adc0e6dcc72cff2ac669101a0513a74bec11bced61251710",
+  "models": {
+    "coldstart": {
+      "repo": "Kangheng/OVR-7B-ColdStart",
+      "revision": "52ad9cb58c52d8e5f8c18abee99f77f78e9f6be3"
+    },
+    "rl": {
+      "repo": "Kangheng/OVR-7B-RL",
+      "revision": "53d5680f59196df1533ca5ec55d9046507c1e6d7"
+    }
+  },
+  "backend": "transformers",
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "quantization": null,
+  "seed": 42,
+  "batch_size": 1,
+  "max_new_tokens": 4096,
+  "max_context_tokens": 8192,
+  "per_question_max_s": 600,
+  "canary_questions": 2,
+  "expected_pilot_questions": 100,
+  "image_processor": {
+    "min_pixels": 200704,
+    "max_pixels": 1003520
+  },
+  "generation": {
+    "do_sample": true,
+    "num_beams": 1,
+    "repetition_penalty": 1.0,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 0
+  },
+  "limits": "Four sampled diagnostic outputs only. Never replace greedy outputs, combine best attempts, or include these in formal accuracy.",
+  "runtime": {
+    "python": "3.12",
+    "torch_cuda": "12.8",
+    "environment_source": "AutoDL PyTorch image via isolated system-site-packages venv",
+    "base_python": "/root/miniconda3/bin/python"
+  },
+  "level_counts": {
+    "1": 9,
+    "5": 25,
+    "3": 12,
+    "2": 29,
+    "4": 25
+  },
+  "max_image_side": null,
+  "image_processor_use_fast": true,
+  "results_namespace": "cloud_diag_sampling_20261022",
+  "config_source": "configs/cloud_diagnostic_sampling.json",
+  "prompt_version": "boxed-options-v1",
+  "source_bundle_sha256": "ea39a4232591b4dffa41bde55a6288d3e0a1be075620bfed22ffc7308d12d19e",
+  "scope_description": "Same 100 questions and original image bytes as teammate Qwen run",
+  "diagnostic_only": true,
+  "diagnostic_max_generations": 4,
+  "diagnostic_comparator": "cloud_shared100/canary"
+}

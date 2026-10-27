@@ -1,0 +1,6 @@
+namespace,file,n,correct,normal_stop,truncated,question_ids,output_tokens
+vllm_deployment_audit,coldstart_defaults_official.jsonl,2,2,2,0,"['40', '51']","[2569, 1089]"
+vllm_deployment_audit,rl_defaults_official.jsonl,2,1,1,1,"['40', '51']","[3667, 4096]"
+vllm_deployment_audit,rl_greedy_official.jsonl,2,0,0,2,"['40', '51']","[4096, 4096]"
+vllm_length_audit,rl_defaults_official.jsonl,1,1,1,0,['51'],[4673]
+cloud_diag_tf_checkpoint_defaults_20261022,rl.jsonl,2,0,0,2,"['40', '51']","[4096, 4096]"

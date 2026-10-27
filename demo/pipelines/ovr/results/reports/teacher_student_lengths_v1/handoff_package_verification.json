@@ -1,0 +1,12 @@
+{
+  "file": "/Users/wangzipu/Projects/ovr-course-project/artifacts/OVR_教师冷启动RL推理长度_完整交接包.zip",
+  "bytes": 12824427,
+  "sha256": "da1bca263a6c9684010bc03b7c1858bfc0227ccf74cab26f91f59512f2020459",
+  "members_verified": 37,
+  "teacher_sample_records": 1000,
+  "student_records": 40,
+  "full_dataset_excluded_but_saved_on_mac": true,
+  "portable_extracted_package_recount_byte_identical": true,
+  "portable_recount_report_files": 4,
+  "revision_note": "Professional report wording; teammate forwarding text removed. All data, analysis, figures and reproduction code unchanged. Two-page visual QA passed."
+}

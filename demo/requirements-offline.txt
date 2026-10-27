@@ -1,0 +1,9 @@
+# Python 3.11 or 3.12; CPU only. Tokenizers pulls huggingface_hub transitively.
+numpy==2.2.6
+Pillow==11.3.0
+sympy==1.13.3
+antlr4-python3-runtime==4.7.2
+latex2sympy2==1.9.1
+fire==0.7.1
+tqdm==4.67.1
+tokenizers==0.22.1

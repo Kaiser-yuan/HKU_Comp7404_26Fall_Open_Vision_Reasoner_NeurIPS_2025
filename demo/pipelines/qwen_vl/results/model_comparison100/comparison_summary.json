@@ -1,0 +1,35 @@
+{
+  "n": 100,
+  "metrics": [
+    {
+      "model": "Qwen2.5-VL-7B-Instruct",
+      "n": 100,
+      "original_matches": 26,
+      "reviewed_answer_matches": 28,
+      "truncated": 2,
+      "original_extraction_failures": 4,
+      "total_generated_tokens": 57334,
+      "sum_inference_seconds": 853.5586504135281,
+      "median_inference_seconds": 6.797286416403949
+    },
+    {
+      "model": "VL-Rethinker-7B",
+      "n": 100,
+      "original_matches": 30,
+      "reviewed_answer_matches": 32,
+      "truncated": 0,
+      "original_extraction_failures": 2,
+      "total_generated_tokens": 49720,
+      "sum_inference_seconds": 741.9180853515863,
+      "median_inference_seconds": 6.746023193001747
+    }
+  ],
+  "paired_categories": {
+    "both_correct": 16,
+    "vl_improved": 16,
+    "vl_regressed": 12,
+    "both_incorrect": 56
+  },
+  "scope": "Fixed test subset; final-answer equivalence rules; not official benchmark or validated reasoning.",
+  "cache_note": "Qwen did not explicitly record use_cache; VL explicitly enabled it. Timing is descriptive, not a controlled speed benchmark."
+}

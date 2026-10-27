@@ -1,0 +1,123 @@
+这是我有一门课的一个group project。请你先阅读一下
+NeurIPS Research Showcase
+
+Overview
+
+The NeurIPS Research Showcase is designed to help you move from simply reading machine learning papers to explaining them clearly to others. The aim of this showcase is for you to identify the core contribution of a recent research paper, explain why it matters, and communicate its main ideas through an effective exhibition.
+
+This project focuses on three key areas:
+
+You will spend time reading and dissecting a recent conference paper to truly grasp its problem, method, and contribution.
+You will develop your scholarly communication by presenting technical material clearly and concisely to a varied audience.
+You will practice professional collaboration by planning work as a team, dividing responsibilities, and responding to questions about your chosen paper.
+If your group wishes, you may also strengthen the project with a technical demo that reproduces or illustrates part of the paper.
+
+Why NeurIPS?
+
+We have selected NeurIPS (the Conference on Neural Information Processing Systems) as our focus because it is the premier venue for breakthroughs in AI and Machine Learning. It consistently ranks as one of the most impactful publications globally, as seen in Google Scholar's top metrics.
+
+For perspective, Google Scholar tracks impact using two key figures: the h5-index (the number of papers with at least that many citations in the last five years) and the h5-median (the median citation count of those top papers).
+
+By working with a NeurIPS paper, you aren't just doing a class assignment; you are engaging with the "Gold Standard" of current research. This is your chance to dissect the very ideas that are currently driving the field forward and shaping the future of technology.
+
+Group Formation
+
+Research groups are randomized by the teaching team to simulate the professional collaboration environment of an academic conference. Groups consist of two or three students to keep the work manageable and ensure each member participates actively. Please refer to the Project Group & Peer Review Assignments for your group assignments and exhibition day. Changes of group membership are not permitted.
+
+Paper Selection
+
+Your group must choose one paper from:
+
+NeurIPS 2025 Oral: OpenReview link
+NeurIPS 2025 Spotlight: OpenReview link
+Record your selection, including the paper title and a link to the PDF in Paper Selection.
+
+Deadline for paper selection: 30 Sep (Wed) at 23:59.
+
+Selection rules:
+
+Availability: Choose a paper that has not already been claimed by another group.
+Finality: Your selection is final after the deadline.
+First-come, first-served: Selection is based on the timestamp of your entry.
+Default Assignment: If your group does not make a valid selection by the deadline, we will assign a paper to you.
+Eligibility: The paper must come from the NeurIPS 2025 Oral or Spotlight track.
+Poster & Showcase Guidelines
+
+A strong poster helps a fellow student quickly understand the research paper. It should provide a clear visual narrative that invites conversation. Focus on answering these core questions:
+
+What problem does the paper address, and why is it important?
+What is the main idea of the proposed method?
+How was the method evaluated and what are the key results?
+What is the single most important takeaway for the audience?
+Think of this as a conversation, not a lecture. Don't try to cram the whole paper onto the poster; if it's too dense, people will just walk past. Your poster should use clear headings and a guided flow to help visitors grasp your findings quickly, allowing you to respond to their specific questions.
+
+Showcase Format
+
+There will be two exhibition sessions. Each group will be assigned to one session only. During your assigned session, you are expected to:
+
+Present your poster and findings.
+Engage seriously with another group as an audience member and reviewer.
+Session dates: 4 Nov (Wed) and 11 Nov (Wed)
+
+Swapping Exhibition Days
+
+If you need to move to a different exhibition day, you are welcome to swap with another group. You may coordinate this through the Moodle discussion forum. Once both groups have agreed to the switch, please send a joint email to the teaching team (cc all members of both groups) so we can update the schedule.
+
+Deliverables
+
+Each group must submit the following to Moodle by 28 Oct (Wed) at 23:59:
+
+One A0 portrait poster in *.pptx format (Microsoft PowerPoint).
+One A0 portrait poster in *.pdf format (exported from the same PowerPoint file).
+Optional: demo code and clear instructions for running it.
+Submission notes:
+
+One submission per group is sufficient.
+If your work depends on non-public data, include the required data or provide a clear explanation.
+If you include a demo, ensure it is usable by someone other than the authors.
+Poster Design Guidance
+
+Use a clear visual hierarchy with an obvious title and section structure.
+Keep text concise; prefer short explanations over dense paragraphs.
+Use figures, diagrams, or examples only when they support understanding.
+Ensure all font sizes and labels remain readable at A0 size.
+Technical Demo
+
+A demo is optional. If included, it should strengthen the poster by illustrating the method's behavior or practical relevance. An unreliable or poorly explained demo will not help your presentation.
+
+Language
+
+All submitted materials and the evaluation will be in English. Peer discussions during the exhibition may take place in any language agreed upon by the participants.
+
+Peer Review
+
+Each student is assigned to submit two peer reviews during their exhibition session. These are formative reviews (focused on feedback and development); the final summative review and grading will be conducted by the TA. The deadline for submission is 11 Nov (Wed) at 23:59. Failure to submit your assigned reviews may result in an F grade for the project component.
+
+For a short explanation of the purpose and expectations of these reviews, please refer to the Poster Exhibition Peer Review Guide.
+
+Intra-Group Peer Review (Optional)
+
+You also have the option to submit an intra-group peer review. This is designed to help us identify any issues with individual contributions within a group. This review is entirely optional; if no intra-group review is submitted, we will assume that everyone in the group contributed fairly. The deadline for this optional submission is also 11 Nov (Wed) at 23:59.
+
+Results
+
+Students are assessed individually. The final project results will be released on 25 Nov (Wed).
+
+Attendance
+
+You are required to attend only your assigned exhibition session. Attendance is compulsory; unauthorized absence will result in 0 marks for the project. If illness prevents attendance, you must submit a dated sick-leave certificate covering the day of your session.
+
+Academic Integrity
+
+Unlike the individual assignments, you are permitted to use generative AI tools to assist with this project. However, any such usage must be clearly declared and documented in your submission.
+
+All non-original material must be credited properly. Any quoted text, borrowed figures, reproduced tables, or reused images must be cited clearly. Plagiarism, including unacknowledged reuse of text, visuals, or AI-generated content, is academic misconduct.
+
+Grade Descriptors
+
+Criterion	A — Outstanding	B — Good	C — Satisfactory	D — Poor	F — Fail
+Content	Comprehensive overview with exceptional depth and clarity. Research question, methodology, results, and conclusions all addressed rigorously.	Clear and accurate summary in a logical sequence. Minor gaps in detail do not detract from overall understanding.	All necessary components present but some sections underdeveloped or lacking in depth.	Incomplete overview; several important aspects poorly explained or omitted. Lacks coherence.	Critical information missing or grossly misrepresented. Research components disjointed and presented without logical sequencing.
+Design & Visuals	Professional and aesthetically pleasing. Visuals effectively enhance findings. Legible text with a well-considered layout.	Clean and functional. Visuals support the content. Generally legible, though some areas could improve flow or emphasis.	Basic design. Visuals adequate but layout may appear cluttered or lack visual appeal. Text may be dense or somewhat hard to read.	Poor use of visuals that do not support the research. Disorganized layout; text may be too small or overwhelming.	Unprofessional and visually unappealing. Little to no effective visual support. Layout haphazard; text often illegible.
+Engagement	Thorough understanding demonstrated. Confident, articulate, well-paced delivery. Questions answered with insightful, comprehensive responses.	Knowledgeable and communicates effectively. Maintains audience interest. Most questions answered with appropriate detail.	Shows understanding but may struggle with complex ideas or full audience engagement. Responses correct but may lack depth or confidence.	Limited understanding. Weak delivery that fails to sustain interest. Answers vague, incomplete, or off-topic.	Poor grasp of the research. Delivery lacks coherence and fails to engage. Unable to adequately answer questions or provide meaningful insight.
+Technical Demo (optional)	Highly sophisticated. Deep understanding of the technology and its application. Operates flawlessly; presenter expertly navigates all features.	Well-executed with minor hiccups that do not significantly detract. Presenter clearly connects technology to the research.	Adequate but lacks polish or shows minor technical difficulties. Basic functionalities demonstrated but connection to research may not be compelling.	Substandard, with noticeable issues that disrupt the presentation. Struggles to show relevance of the technology to the research.	Fails to function, or presenter unable to operate the technology. Clear disconnect between the technology and the research.
+Cohesion	Poster and presentation cohesively aligned with research objectives. Each element reinforces the others for a strong, unified message.	Poster and presentation complement each other well. Overall message is clear with only minor inconsistencies.	Generally aligned with research objectives but lacks a strong connection. Does not fully articulate a coherent message.	Disconnect between poster and presentation. Research objectives not clearly reflected in either. Message muddled.	No apparent connection between poster, presentation, and research objectives. Disjointed and ineffective communication.

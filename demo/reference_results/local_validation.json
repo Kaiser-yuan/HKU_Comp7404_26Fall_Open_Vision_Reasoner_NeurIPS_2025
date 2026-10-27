@@ -1,0 +1,9 @@
+{
+  "new_script_syntax": "passed",
+  "duplicate_id_rejected": true,
+  "archived_budget_tests_passed": 9,
+  "archived_trace_length_tests_passed": 9,
+  "full_offline_pipeline": "ALL_OFFLINE_REPRODUCTION_VERIFIED",
+  "new_model_generations": 0,
+  "added_gpu_entrypoint_removed": true
+}

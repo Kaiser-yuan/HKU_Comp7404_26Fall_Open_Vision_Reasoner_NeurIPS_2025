@@ -1,0 +1,22 @@
+{
+  "questions": 100,
+  "unique_ids": 100,
+  "readable_original_images": 100,
+  "bundle_sha256": "ea39a4232591b4dffa41bde55a6288d3e0a1be075620bfed22ffc7308d12d19e",
+  "seeded_selection_reproduced": true,
+  "official_metadata_matches": 100,
+  "level_counts": {
+    "1": 9,
+    "5": 25,
+    "3": 12,
+    "2": 29,
+    "4": 25
+  },
+  "largest_image_side": 2533,
+  "image_bytes_preserved": true,
+  "inputs_sha256": "b6d69309e6fc080da3ffb54286f77e2bfa1e41cc2f4dd05f59d2b1d27ebf3598",
+  "references_sha256": "131b3b901071f9b4adc0e6dcc72cff2ac669101a0513a74bec11bced61251710",
+  "qwen_raw_responses_present": false,
+  "real_ovr_generations": 0,
+  "scoring_alignment": "Qwen reference uses a custom scorer. Obtain its raw outputs and rescore all models consistently before comparing accuracies."
+}

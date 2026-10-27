@@ -1,0 +1,13 @@
+{
+  "base_archive": "OVR_四模型与输出预算_完整复现包_20261027.zip",
+  "base_archive_sha256": "098b59737e03720d61405592d1e432ef4892ff9c36230fd0ddfa0055731276a0",
+  "rolled_back_to": "original v1 analysis and results",
+  "removed_added_files": [
+    "docs/02_GPU重新推理.md",
+    "scripts/rerun_ovr.py",
+    "scripts/score_fresh_ovr.py"
+  ],
+  "qwen_budget20_comparison_included": false,
+  "original_inference_code_retained": true,
+  "note": "Original100, budget20 follow-up, and teacher-length analysis stay separate. No new generation or rescoring."
+}

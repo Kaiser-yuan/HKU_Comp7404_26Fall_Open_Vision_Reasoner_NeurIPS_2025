@@ -1,0 +1,88 @@
+{
+  "status": "VERIFIED_COMPLETE_200_FIRST_ATTEMPTS",
+  "verified_utc": "2026-10-23T08:18:28.722664+00:00",
+  "scope": "Fixed teammate 100-question subset; two OVR models; not full MathVision reproduction",
+  "archive_sha256": "64e507bc52c7caffa367cee4655931d0531572d097a12c449f8e1d9a7da22786",
+  "archive_bytes": 10132488,
+  "member_sha_verified": 129,
+  "images_readable": 100,
+  "same_order_and_ids": true,
+  "models": {
+    "coldstart": {
+      "count": 100,
+      "correct": 34,
+      "unique_ids": 100,
+      "missing_ids": [],
+      "duplicate_ids": [],
+      "raw_sha256": "456467dc37b2d15cdd7785668cadbdaa44046759aedce0a1b8f1dbc32a8f09e1",
+      "cloud_scored_sha256": "faf8f3f5d0907b9523ac7173b4a3bac79a253f18bc1db37ef14c9dd74cc6abb3",
+      "mac_scored_sha256": "faf8f3f5d0907b9523ac7173b4a3bac79a253f18bc1db37ef14c9dd74cc6abb3",
+      "official_scores_match": true,
+      "raw_unchanged": true,
+      "http_submitted": 100,
+      "http_received": 100,
+      "session_started_utc": "2026-10-23T01:31:56.457934+00:00",
+      "session_ended_utc": "2026-10-23T04:38:01.117415+00:00"
+    },
+    "rl": {
+      "count": 100,
+      "correct": 31,
+      "unique_ids": 100,
+      "missing_ids": [],
+      "duplicate_ids": [],
+      "raw_sha256": "13a6082b24841c9fec523c73408adb0d8192058781241af61520195e7e05e045",
+      "cloud_scored_sha256": "9cdef2e2f4897f5a6f02bcf9c478e1412d9ed4f17b68efe757d1904dc9ef2bd6",
+      "mac_scored_sha256": "9cdef2e2f4897f5a6f02bcf9c478e1412d9ed4f17b68efe757d1904dc9ef2bd6",
+      "official_scores_match": true,
+      "raw_unchanged": true,
+      "http_submitted": 100,
+      "http_received": 100,
+      "session_started_utc": "2026-10-23T04:38:06.387307+00:00",
+      "session_ended_utc": "2026-10-23T08:11:52.540929+00:00"
+    }
+  },
+  "overall": {
+    "coldstart": {
+      "accuracy_observed": 0.34,
+      "ci95_low": 0.25461520797348164,
+      "ci95_high": 0.43722271145275377,
+      "mean_output_tokens": 6248.27,
+      "mean_latency_s": 110.37799159672112,
+      "truncation_rate_observed": 0.48,
+      "n": 100,
+      "correct": 34,
+      "truncated": 48,
+      "natural_stop": 52,
+      "empty": 0
+    },
+    "rl": {
+      "accuracy_observed": 0.31,
+      "ci95_low": 0.22779697212376038,
+      "ci95_high": 0.40626055719489407,
+      "mean_output_tokens": 7231.45,
+      "mean_latency_s": 126.87377399556338,
+      "truncation_rate_observed": 0.7,
+      "n": 100,
+      "correct": 31,
+      "truncated": 70,
+      "natural_stop": 30,
+      "empty": 0
+    }
+  },
+  "transitions": {
+    "1->1": 21,
+    "0->0": 56,
+    "1->0": 13,
+    "0->1": 10
+  },
+  "development_overlap_ids": [
+    "40",
+    "51",
+    "465",
+    "689",
+    "1542",
+    "2016",
+    "2968"
+  ],
+  "upstream_evaluator_commit": "a1f5cc3add200c0cd080fad463e500f44ef1fb41"
+}

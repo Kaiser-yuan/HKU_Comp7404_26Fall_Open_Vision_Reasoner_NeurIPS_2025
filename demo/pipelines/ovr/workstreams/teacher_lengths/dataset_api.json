@@ -1,0 +1,90 @@
+{
+  "_id": "68baa1f36bfed033ded4645c",
+  "id": "Kangheng/OVR-Dataset-ColdStart",
+  "author": "Kangheng",
+  "sha": "e377de8ec93f9d1ff48744dcdc8c51c4801c6da2",
+  "lastModified": "2025-09-05T08:56:45.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "license:apache-2.0",
+    "size_categories:100K<n<1M",
+    "format:parquet",
+    "modality:text",
+    "library:datasets",
+    "library:dask",
+    "library:mlcroissant",
+    "library:polars",
+    "region:us"
+  ],
+  "downloads": 76,
+  "likes": 4,
+  "cardData": {
+    "license": "apache-2.0"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "1ef325f1b111266a6b26e0196871bd78baa8c2f3",
+      "size": 2461
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "7b95401dc46245ac339fc25059d4a56d90b4cde5",
+      "size": 31
+    },
+    {
+      "rfilename": "cold_start_1.parquet",
+      "blobId": "a8d076c66e391805deffb88840592e7c372e6dc2",
+      "size": 495525915,
+      "lfs": {
+        "sha256": "ff3d25021ada2704a9070fa483b1c85558c5bd1b5e20f4254c42a148b0942d7c",
+        "size": 495525915,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "cold_start_2.parquet",
+      "blobId": "d35e95db8e8c0f86736f878a2eaff43b3fa67547",
+      "size": 3421654102,
+      "lfs": {
+        "sha256": "28b8b4b411dc1cb5c7c5793a0e1d6d57b69d24fbf994451f7821660d8c985f24",
+        "size": 3421654102,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "cold_start_3.parquet",
+      "blobId": "ecad093ea437d57883390607c5ceee6fb063e2d6",
+      "size": 4895894813,
+      "lfs": {
+        "sha256": "4350605a96f0ca91c9076118c34c06eef5ef95edb7cbe82e8b1c16ad77bbb2c5",
+        "size": 4895894813,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "cold_start_4.parquet",
+      "blobId": "bb614dd4a7f155b98fd4acd1a2b8f56383db7867",
+      "size": 2262109188,
+      "lfs": {
+        "sha256": "bfb0c1415d3a100ea5e98468853af6237b144c192ed0b92d710856becc21820e",
+        "size": 2262109188,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "cold_start_5.parquet",
+      "blobId": "fe664251620ac28a5fe5eb8357cb75f9712dc949",
+      "size": 709125090,
+      "lfs": {
+        "sha256": "5e201a99aa5459361216b589f605c0ac06ac6c4e2bf1bb432610503fde23f40e",
+        "size": 709125090,
+        "pointerSize": 134
+      }
+    }
+  ],
+  "createdAt": "2025-09-05T08:40:19.000Z",
+  "usedStorage": 14203024734
+}

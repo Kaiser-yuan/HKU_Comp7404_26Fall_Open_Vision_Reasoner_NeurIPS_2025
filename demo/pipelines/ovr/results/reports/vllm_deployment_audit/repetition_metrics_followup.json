@@ -1,0 +1,155 @@
+[
+  {
+    "namespace": "cloud_shared100",
+    "model": "rl",
+    "question_id": "40",
+    "tokens": 4096,
+    "finish_reason": "length",
+    "repeated_20gram_fraction": 0.8033,
+    "max_20gram_occurrences": 56
+  },
+  {
+    "namespace": "cloud_shared100",
+    "model": "rl",
+    "question_id": "51",
+    "tokens": 4096,
+    "finish_reason": "length",
+    "repeated_20gram_fraction": 0.2308,
+    "max_20gram_occurrences": 6
+  },
+  {
+    "namespace": "cloud_shared100",
+    "model": "coldstart",
+    "question_id": "40",
+    "tokens": 4096,
+    "finish_reason": "length",
+    "repeated_20gram_fraction": 0.8011,
+    "max_20gram_occurrences": 30
+  },
+  {
+    "namespace": "cloud_shared100",
+    "model": "coldstart",
+    "question_id": "51",
+    "tokens": 4096,
+    "finish_reason": "length",
+    "repeated_20gram_fraction": 0.7371,
+    "max_20gram_occurrences": 32
+  },
+  {
+    "namespace": "cloud_diag_sampling_20261022",
+    "model": "rl",
+    "question_id": "40",
+    "tokens": 4096,
+    "finish_reason": "length",
+    "repeated_20gram_fraction": 0.1302,
+    "max_20gram_occurrences": 6
+  },
+  {
+    "namespace": "cloud_diag_sampling_20261022",
+    "model": "rl",
+    "question_id": "51",
+    "tokens": 4096,
+    "finish_reason": "length",
+    "repeated_20gram_fraction": 0.0996,
+    "max_20gram_occurrences": 24
+  },
+  {
+    "namespace": "cloud_diag_sampling_20261022",
+    "model": "coldstart",
+    "question_id": "40",
+    "tokens": 3205,
+    "finish_reason": "stop",
+    "repeated_20gram_fraction": 0.0822,
+    "max_20gram_occurrences": 11
+  },
+  {
+    "namespace": "cloud_diag_sampling_20261022",
+    "model": "coldstart",
+    "question_id": "51",
+    "tokens": 2591,
+    "finish_reason": "stop",
+    "repeated_20gram_fraction": 0.0093,
+    "max_20gram_occurrences": 2
+  },
+  {
+    "namespace": "cloud_diag_tf_checkpoint_defaults_20261022",
+    "model": "rl",
+    "question_id": "40",
+    "tokens": 4096,
+    "finish_reason": "length",
+    "repeated_20gram_fraction": 0.1302,
+    "max_20gram_occurrences": 6
+  },
+  {
+    "namespace": "cloud_diag_tf_checkpoint_defaults_20261022",
+    "model": "rl",
+    "question_id": "51",
+    "tokens": 4096,
+    "finish_reason": "length",
+    "repeated_20gram_fraction": 0.0996,
+    "max_20gram_occurrences": 24
+  },
+  {
+    "namespace": "vllm_deployment_audit",
+    "model": "coldstart",
+    "question_id": "40",
+    "tokens": 2569,
+    "finish_reason": "stop",
+    "repeated_20gram_fraction": 0.1071,
+    "max_20gram_occurrences": 13
+  },
+  {
+    "namespace": "vllm_deployment_audit",
+    "model": "coldstart",
+    "question_id": "51",
+    "tokens": 1089,
+    "finish_reason": "stop",
+    "repeated_20gram_fraction": 0.0,
+    "max_20gram_occurrences": 1
+  },
+  {
+    "namespace": "vllm_deployment_audit",
+    "model": "rl",
+    "question_id": "40",
+    "tokens": 3667,
+    "finish_reason": "stop",
+    "repeated_20gram_fraction": 0.057,
+    "max_20gram_occurrences": 10
+  },
+  {
+    "namespace": "vllm_deployment_audit",
+    "model": "rl",
+    "question_id": "51",
+    "tokens": 4096,
+    "finish_reason": "length",
+    "repeated_20gram_fraction": 0.1069,
+    "max_20gram_occurrences": 10
+  },
+  {
+    "namespace": "vllm_deployment_audit",
+    "model": "rl",
+    "question_id": "40",
+    "tokens": 4096,
+    "finish_reason": "length",
+    "repeated_20gram_fraction": 0.7577,
+    "max_20gram_occurrences": 48
+  },
+  {
+    "namespace": "vllm_deployment_audit",
+    "model": "rl",
+    "question_id": "51",
+    "tokens": 4096,
+    "finish_reason": "length",
+    "repeated_20gram_fraction": 0.2291,
+    "max_20gram_occurrences": 10
+  },
+  {
+    "namespace": "vllm_length_audit",
+    "model": "rl",
+    "question_id": "51",
+    "tokens": 4673,
+    "finish_reason": "stop",
+    "repeated_20gram_fraction": 0.0245,
+    "max_20gram_occurrences": 4
+  }
+]

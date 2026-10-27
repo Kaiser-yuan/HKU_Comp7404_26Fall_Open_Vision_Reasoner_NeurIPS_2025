@@ -1,0 +1,379 @@
+{
+  "status": "ALL_OFFLINE_REPRODUCTION_VERIFIED",
+  "new_generations": 0,
+  "gpu_used": false,
+  "distributed_files_unchanged": true,
+  "inputs_same_ids_images_prompts_labels": true,
+  "original_qwen_vl_history": {
+    "n": 100,
+    "metrics": [
+      {
+        "model": "Qwen2.5-VL-7B-Instruct",
+        "n": 100,
+        "original_matches": 26,
+        "reviewed_answer_matches": 28,
+        "truncated": 2,
+        "original_extraction_failures": 4,
+        "total_generated_tokens": 57334,
+        "sum_inference_seconds": 853.5586504135281,
+        "median_inference_seconds": 6.797286416403949
+      },
+      {
+        "model": "VL-Rethinker-7B",
+        "n": 100,
+        "original_matches": 30,
+        "reviewed_answer_matches": 32,
+        "truncated": 0,
+        "original_extraction_failures": 2,
+        "total_generated_tokens": 49720,
+        "sum_inference_seconds": 741.9180853515863,
+        "median_inference_seconds": 6.746023193001747
+      }
+    ],
+    "paired_categories": {
+      "both_correct": 16,
+      "vl_improved": 16,
+      "vl_regressed": 12,
+      "both_incorrect": 56
+    },
+    "scope": "Fixed test subset; final-answer equivalence rules; not official benchmark or validated reasoning.",
+    "cache_note": "Qwen did not explicitly record use_cache; VL explicitly enabled it. Timing is descriptive, not a controlled speed benchmark."
+  },
+  "official_four_model_metrics": [
+    {
+      "model": "qwen",
+      "n": 100,
+      "correct": 28,
+      "accuracy": 0.28,
+      "truncated": 2,
+      "mean_output_tokens": 573.34,
+      "output_budget": 4096,
+      "decoding": "greedy",
+      "backend": "Transformers SDPA",
+      "controlled_four_way_comparison": false
+    },
+    {
+      "model": "vl_rethinker",
+      "n": 100,
+      "correct": 32,
+      "accuracy": 0.32,
+      "truncated": 0,
+      "mean_output_tokens": 497.2,
+      "output_budget": 4096,
+      "decoding": "greedy",
+      "backend": "Transformers SDPA",
+      "controlled_four_way_comparison": false
+    },
+    {
+      "model": "coldstart",
+      "n": 100,
+      "correct": 34,
+      "accuracy": 0.34,
+      "truncated": 48,
+      "mean_output_tokens": 6248.27,
+      "output_budget": 8192,
+      "decoding": "sampling T0.6 p0.95 k40",
+      "backend": "vLLM 0.11.0",
+      "controlled_four_way_comparison": false
+    },
+    {
+      "model": "rl",
+      "n": 100,
+      "correct": 31,
+      "accuracy": 0.31,
+      "truncated": 70,
+      "mean_output_tokens": 7231.45,
+      "output_budget": 8192,
+      "decoding": "sampling T0.6 p0.95 k40",
+      "backend": "vLLM 0.11.0",
+      "controlled_four_way_comparison": false
+    }
+  ],
+  "ovr_reproduction": "pipelines/ovr/results/reproduced/20261027T075348Z-4189a641",
+  "budget": {
+    "complete": true,
+    "status": "COMPLETE",
+    "method": "one_16k_request_two_token_prefix_views",
+    "summaries": [
+      {
+        "model": "coldstart",
+        "budget_tokens": 8192,
+        "observed_n": 20,
+        "expected_n": 20,
+        "correct": 4,
+        "accuracy_over_observed": 0.2,
+        "wilson_ci95": [
+          0.08065766257979806,
+          0.41601743225189364
+        ],
+        "natural_stop_n": 9,
+        "length_limit_n": 11,
+        "empty_n": 0,
+        "nonempty_box_anywhere_n": 9,
+        "natural_stop_with_box_n": 9,
+        "think_closed_n": 9,
+        "mean_output_tokens": 6742.1,
+        "mean_token_boundary_observed_s": 122.94368444029242
+      },
+      {
+        "model": "coldstart",
+        "budget_tokens": 16384,
+        "observed_n": 20,
+        "expected_n": 20,
+        "correct": 10,
+        "accuracy_over_observed": 0.5,
+        "wilson_ci95": [
+          0.2992980081982123,
+          0.7007019918017877
+        ],
+        "natural_stop_n": 20,
+        "length_limit_n": 0,
+        "empty_n": 0,
+        "nonempty_box_anywhere_n": 20,
+        "natural_stop_with_box_n": 20,
+        "think_closed_n": 20,
+        "mean_output_tokens": 8964.15,
+        "mean_token_boundary_observed_s": 163.6969025991857
+      },
+      {
+        "model": "rl",
+        "budget_tokens": 8192,
+        "observed_n": 20,
+        "expected_n": 20,
+        "correct": 6,
+        "accuracy_over_observed": 0.3,
+        "wilson_ci95": [
+          0.1454772448676043,
+          0.5189728183535235
+        ],
+        "natural_stop_n": 5,
+        "length_limit_n": 15,
+        "empty_n": 0,
+        "nonempty_box_anywhere_n": 5,
+        "natural_stop_with_box_n": 5,
+        "think_closed_n": 5,
+        "mean_output_tokens": 7338.1,
+        "mean_token_boundary_observed_s": 128.2482424903661
+      },
+      {
+        "model": "rl",
+        "budget_tokens": 16384,
+        "observed_n": 20,
+        "expected_n": 20,
+        "correct": 8,
+        "accuracy_over_observed": 0.4,
+        "wilson_ci95": [
+          0.21880653237281705,
+          0.6134184992377469
+        ],
+        "natural_stop_n": 16,
+        "length_limit_n": 4,
+        "empty_n": 0,
+        "nonempty_box_anywhere_n": 16,
+        "natural_stop_with_box_n": 16,
+        "think_closed_n": 16,
+        "mean_output_tokens": 11214.2,
+        "mean_token_boundary_observed_s": 197.43571033049375
+      }
+    ],
+    "transitions": {
+      "coldstart": {
+        "observed_n": 20,
+        "improved": 6,
+        "regressed": 0
+      },
+      "rl": {
+        "observed_n": 20,
+        "improved": 3,
+        "regressed": 1
+      }
+    },
+    "original_trajectory_sha256": {
+      "coldstart": "35cb97edaca83f14d89d2add701ca7800e24b0cc2782dda95e93fec91437878c",
+      "rl": "581ff26a75746084a5c781b906ba0d126951043343c834e6deb6c861cb097878"
+    },
+    "limits": [
+      "Exploratory selected subset of already observed questions, not a holdout.",
+      "8k is a token-prefix view, not an independently executed 8k request.",
+      "Chunk-arrival timing is approximate; total charged runtime is separately recorded.",
+      "Nonempty boxes and closing think markers do not prove visual reflection or correct finalization.",
+      "Do not combine best answers across budgets or replace original 100-question results.",
+      "Accuracy over observed rows is not a complete 20-question score when complete=false."
+    ]
+  },
+  "length": {
+    "complete": true,
+    "teacher_expected_n": 1000,
+    "teacher_observed_n": 1000,
+    "teacher_unique_question_n": 1000,
+    "teacher_unique_response_n": 1000,
+    "tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "counting": "Canonical re-tokenization of decoded text with the same Qwen tokenizer; add_special_tokens=False; reasoning excludes think delimiters and final answer. Student opening think delimiter was supplied by the official template. Observed censored lengths are lower bounds. Teacher unsegmented answers retain response length but have reasoning length=null.",
+    "groups": [
+      {
+        "group": "teacher",
+        "sample_n": 1000,
+        "response_text": {
+          "n": 1000,
+          "mean": 4941.407,
+          "median": 3067.5,
+          "min": 182,
+          "max": 26605,
+          "p25": 1365.5,
+          "p75": 6852.75
+        },
+        "reasoning_observed": {
+          "n": 1000,
+          "mean": 4444.473,
+          "median": 2522.5,
+          "min": 171,
+          "max": 25757,
+          "p25": 1068.25,
+          "p75": 6118.75
+        },
+        "reasoning_completed": {
+          "n": 1000,
+          "mean": 4444.473,
+          "median": 2522.5,
+          "min": 171,
+          "max": 25757,
+          "p25": 1068.25,
+          "p75": 6118.75
+        },
+        "capped_n": null,
+        "reasoning_right_censored_n": 0,
+        "unsegmented_n": 0
+      },
+      {
+        "group": "coldstart",
+        "sample_n": 20,
+        "response_text": {
+          "n": 20,
+          "mean": 8964.15,
+          "median": 9991.0,
+          "min": 1094,
+          "max": 15870,
+          "p25": 6300.5,
+          "p75": 12135.0
+        },
+        "reasoning_observed": {
+          "n": 20,
+          "mean": 8672.9,
+          "median": 9624.5,
+          "min": 797,
+          "max": 15506,
+          "p25": 5969.75,
+          "p75": 11703.75
+        },
+        "reasoning_completed": {
+          "n": 20,
+          "mean": 8672.9,
+          "median": 9624.5,
+          "min": 797,
+          "max": 15506,
+          "p25": 5969.75,
+          "p75": 11703.75
+        },
+        "capped_n": 0,
+        "reasoning_right_censored_n": 0,
+        "unsegmented_n": 0
+      },
+      {
+        "group": "rl",
+        "sample_n": 20,
+        "response_text": {
+          "n": 20,
+          "mean": 11214.2,
+          "median": 11787.5,
+          "min": 1381,
+          "max": 16384,
+          "p25": 9718.25,
+          "p75": 14771.25
+        },
+        "reasoning_observed": {
+          "n": 20,
+          "mean": 10968.75,
+          "median": 11508.5,
+          "min": 984,
+          "max": 16384,
+          "p25": 9609.0,
+          "p75": 14439.75
+        },
+        "reasoning_completed": {
+          "n": 16,
+          "mean": 9614.9375,
+          "median": 11250.5,
+          "min": 984,
+          "max": 14925,
+          "p25": 7264.0,
+          "p75": 11711.5
+        },
+        "capped_n": 4,
+        "reasoning_right_censored_n": 4,
+        "unsegmented_n": 0
+      }
+    ],
+    "paired_completed": {
+      "both_completed_n": 16,
+      "question_ids": [
+        "246",
+        "598",
+        "667",
+        "783",
+        "936",
+        "1052",
+        "1080",
+        "1296",
+        "1527",
+        "1618",
+        "2529",
+        "2536",
+        "2632",
+        "2760",
+        "2911",
+        "3034"
+      ],
+      "coldstart_reasoning": {
+        "n": 16,
+        "mean": 8010.8125,
+        "median": 8658.5,
+        "min": 797,
+        "max": 15506,
+        "p25": 5178.25,
+        "p75": 10633.5
+      },
+      "rl_reasoning": {
+        "n": 16,
+        "mean": 9614.9375,
+        "median": 11250.5,
+        "min": 984,
+        "max": 14925,
+        "p25": 7264.0,
+        "p75": 11711.5
+      },
+      "paired_reasoning_delta_rl_minus_coldstart": {
+        "n": 16,
+        "mean": 1604.125,
+        "median": 1573.0,
+        "min": -6023,
+        "max": 7469,
+        "p25": 559.0,
+        "p75": 4073.25
+      },
+      "limitation": "Completion-selected subset; excludes four RL-censored questions, not an unbiased replacement for all 20."
+    },
+    "scope": "Descriptive cross-task comparison; not a paired teacher-student capability evaluation and not full original training mixture",
+    "teacher_training_coverage": "Published revision only; not assumed identical to all original training examples; task and modality differ from MathVision.",
+    "limitations": [
+      "Longer text is not evidence of stronger reasoning, behavior transfer or actual visual attention.",
+      "Teacher end-of-generation status is unavailable; absence of a length finish reason does not establish uncensored teacher generation.",
+      "No resampling, new generation, training, GPU, or paid model judge."
+    ]
+  },
+  "interpretation": "Performance is sensitive to output budget and answer extraction/finalization. These observations do not establish that RL intrinsically decreases reasoning ability.",
+  "limits": [
+    "All four models share data but have different generation budgets/backends/decoding.",
+    "Budget20 consists of 40 trajectories with 80 scored prefix views, not 80 independent generations.",
+    "This is checkpoint evaluation and offline re-analysis, not training reproduction."
+  ]
+}

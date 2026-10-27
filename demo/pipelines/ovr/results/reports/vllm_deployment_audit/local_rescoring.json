@@ -1,0 +1,42 @@
+[
+  {
+    "namespace": "vllm_deployment_audit",
+    "file": "coldstart_defaults_official.jsonl",
+    "count": 2,
+    "correct": 2,
+    "raw_unchanged": true,
+    "matches_cloud": true
+  },
+  {
+    "namespace": "vllm_deployment_audit",
+    "file": "rl_defaults_official.jsonl",
+    "count": 2,
+    "correct": 1,
+    "raw_unchanged": true,
+    "matches_cloud": true
+  },
+  {
+    "namespace": "vllm_deployment_audit",
+    "file": "rl_greedy_official.jsonl",
+    "count": 2,
+    "correct": 0,
+    "raw_unchanged": true,
+    "matches_cloud": true
+  },
+  {
+    "namespace": "vllm_length_audit",
+    "file": "rl_defaults_official.jsonl",
+    "count": 1,
+    "correct": 1,
+    "raw_unchanged": true,
+    "matches_cloud": true
+  },
+  {
+    "namespace": "cloud_diag_tf_checkpoint_defaults_20261022",
+    "file": "canary/rl.jsonl",
+    "count": 2,
+    "correct": 0,
+    "raw_unchanged": true,
+    "matches_cloud": true
+  }
+]

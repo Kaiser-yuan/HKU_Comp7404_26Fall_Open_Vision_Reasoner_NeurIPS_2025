@@ -1,0 +1,14 @@
+{
+  "pid": 1751,
+  "started_utc": "2026-10-26T01:16:31.675386+00:00",
+  "command": [
+    "/root/autodl-tmp/OVR_CLOUD_STARTER/.venv-cloud/bin/python",
+    "-m",
+    "ovr.budget_compare",
+    "--run",
+    "--minutes",
+    "180"
+  ],
+  "minutes_limit": 180,
+  "instance_power_or_billing_changed": false
+}

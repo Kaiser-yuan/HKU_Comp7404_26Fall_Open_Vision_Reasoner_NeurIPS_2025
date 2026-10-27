@@ -1,0 +1,7 @@
+{
+  "raw_sha256": "2fcc9feccc871cc48b3f3eab937cc27aabdc0e6bafd97734dc29075d5e497609",
+  "scored_sha256": "40cb492463977dfbb1ecfddcb571a724ac33a3dc84e6c89938fafcf85b81481c",
+  "evaluator_commit": "a1f5cc3add200c0cd080fad463e500f44ef1fb41",
+  "count": 20,
+  "correct": 6
+}

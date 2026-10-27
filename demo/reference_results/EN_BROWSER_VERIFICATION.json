@@ -1,0 +1,11 @@
+{
+  "english_landing_page": true,
+  "three_separate_experiment_tabs": true,
+  "keyboard_navigation": true,
+  "mobile_overflow_checked": true,
+  "original_english_case_viewer_cases": 6,
+  "all_case_images_and_outputs_present": true,
+  "answer_reveal": true,
+  "page_errors": [],
+  "remote_requests": []
+}

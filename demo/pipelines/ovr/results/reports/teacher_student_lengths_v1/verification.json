@@ -1,0 +1,71 @@
+{
+  "status": "COMPLETE_THREE_GROUP_COMPARISON_VERIFIED",
+  "dataset_revision": "e377de8ec93f9d1ff48744dcdc8c51c4801c6da2",
+  "dataset_files": [
+    {
+      "file": "cold_start_1.parquet",
+      "bytes": 495525915,
+      "sha256": "ff3d25021ada2704a9070fa483b1c85558c5bd1b5e20f4254c42a148b0942d7c"
+    },
+    {
+      "file": "cold_start_2.parquet",
+      "bytes": 3421654102,
+      "sha256": "28b8b4b411dc1cb5c7c5793a0e1d6d57b69d24fbf994451f7821660d8c985f24"
+    },
+    {
+      "file": "cold_start_3.parquet",
+      "bytes": 4895894813,
+      "sha256": "4350605a96f0ca91c9076118c34c06eef5ef95edb7cbe82e8b1c16ad77bbb2c5"
+    },
+    {
+      "file": "cold_start_4.parquet",
+      "bytes": 2262109188,
+      "sha256": "bfb0c1415d3a100ea5e98468853af6237b144c192ed0b92d710856becc21820e"
+    },
+    {
+      "file": "cold_start_5.parquet",
+      "bytes": 709125090,
+      "sha256": "5e201a99aa5459361216b589f605c0ac06ac6c4e2bf1bb432610503fde23f40e"
+    }
+  ],
+  "total_dataset_bytes": 11784309108,
+  "sampling_protocol_sha256": "474f0b44807dec9a6449275365c6a17dce691f1117e71bf7357d64cf05742faa",
+  "protocol_identical_to_pre_download_commit": "eb4949f",
+  "teacher_expected_n": 1000,
+  "teacher_observed_n": 1000,
+  "teacher_unique_question_n": 1000,
+  "teacher_unique_response_n": 1000,
+  "teacher_measurements_recomputed_from_saved_sample_match": true,
+  "student_unique_records": 40,
+  "student_censored_n": 4,
+  "student_rl_longer_pairs": 17,
+  "original_student_raw_and_scores_sha256_unchanged": {
+    "results/raw/cloud_vllm_budget20_prefix_v1/coldstart.jsonl": "35cb97edaca83f14d89d2add701ca7800e24b0cc2782dda95e93fec91437878c",
+    "results/raw/cloud_vllm_budget20_prefix_v1/rl.jsonl": "581ff26a75746084a5c781b906ba0d126951043343c834e6deb6c861cb097878",
+    "results/raw/cloud_vllm_shared1008192_v1/pilot/coldstart.jsonl": "456467dc37b2d15cdd7785668cadbdaa44046759aedce0a1b8f1dbc32a8f09e1",
+    "results/raw/cloud_vllm_shared1008192_v1/pilot/rl.jsonl": "13a6082b24841c9fec523c73408adb0d8192058781241af61520195e7e05e045",
+    "results/scored/cloud_vllm_shared1008192_v1/pilot/coldstart.jsonl": "faf8f3f5d0907b9523ac7173b4a3bac79a253f18bc1db37ef14c9dd74cc6abb3",
+    "results/scored/cloud_vllm_shared1008192_v1/pilot/rl.jsonl": "9cdef2e2f4897f5a6f02bcf9c478e1412d9ed4f17b68efe757d1904dc9ef2bd6"
+  },
+  "source_tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+  "new_generations": 0,
+  "training_runs": 0,
+  "gpu_used": false,
+  "paid_model_calls": 0,
+  "document_visual_qa_pages": 2,
+  "analysis_boundary_and_sampling_tests_passed": 9,
+  "environment": {
+    "pyarrow": "21.0.0",
+    "tokenizers": "0.22.1",
+    "huggingface_hub": "0.35.3",
+    "hf_xet": "1.7.0",
+    "requests": "2.34.2",
+    "matplotlib": "3.11.2"
+  },
+  "limitations": [
+    "Longer text is not evidence of stronger reasoning, behavior transfer or actual visual attention.",
+    "Teacher end-of-generation status is unavailable; absence of a length finish reason does not establish uncensored teacher generation.",
+    "No resampling, new generation, training, GPU, or paid model judge."
+  ],
+  "data_transfer": "Resumable HTTP Range downloads from the official HF repository and hf-mirror.com; exact revision, byte ranges and upstream whole-file SHA validated. Prior failed download attempts retained separately."
+}

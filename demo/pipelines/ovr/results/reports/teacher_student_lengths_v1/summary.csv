@@ -1,0 +1,4 @@
+group,n,mean_response_text_tokens,median_response_text_tokens,segmented_reasoning_n,mean_observed_reasoning_tokens,median_observed_reasoning_tokens,student_length_limit_n,reasoning_right_censored_n,unsegmented_n
+teacher,1000,4941.407,3067.5,1000,4444.473,2522.5,,0,0
+coldstart,20,8964.15,9991.0,20,8672.9,9624.5,0,0,0
+rl,20,11214.2,11787.5,20,10968.75,11508.5,4,4,0

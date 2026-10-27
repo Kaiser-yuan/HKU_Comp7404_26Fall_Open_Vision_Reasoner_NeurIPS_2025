@@ -1,0 +1,76 @@
+{
+  "command": [
+    "/root/ovr-course-env/vllm011/bin/python",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "/root/autodl-tmp/OVR_CLOUD_STARTER/models/coldstart-52ad9cb58c52/load",
+    "--served-model-name",
+    "ovr-coldstart",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "38915",
+    "--tensor-parallel-size",
+    "1",
+    "--gpu-memory-utilization",
+    "0.6",
+    "--dtype",
+    "bfloat16",
+    "--max-model-len",
+    "16384",
+    "--max-num-seqs",
+    "1",
+    "--max-num-batched-tokens",
+    "16384",
+    "--generation-config",
+    "auto",
+    "--seed",
+    "42",
+    "--enforce-eager",
+    "--limit-mm-per-prompt",
+    "{\"image\":1,\"video\":0}",
+    "--mm-processor-kwargs",
+    "{\"min_pixels\": 200704, \"max_pixels\": 1003520}",
+    "--disable-log-requests"
+  ],
+  "model": "coldstart",
+  "started_utc": "2026-10-23T01:21:12.245713+00:00",
+  "pid": 4072,
+  "served_models": {
+    "object": "list",
+    "data": [
+      {
+        "id": "ovr-coldstart",
+        "object": "model",
+        "created": 1792718502,
+        "owned_by": "vllm",
+        "root": "/root/autodl-tmp/OVR_CLOUD_STARTER/models/coldstart-52ad9cb58c52/load",
+        "parent": null,
+        "max_model_len": 16384,
+        "permission": [
+          {
+            "id": "modelperm-9eef07e1bf33412b84e922a1df47ff11",
+            "object": "model_permission",
+            "created": 1792718502,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      }
+    ]
+  },
+  "attention_backend_log_evidence": [
+    "\u001b[1;36m(EngineCore_DP0 pid=4336)\u001b[0;0m INFO 10-23 09:21:32 [cuda.py:366] Using Flash Attention backend on V1 engine."
+  ],
+  "stopped": true,
+  "exit_code": 0,
+  "ended_utc": "2026-10-23T01:31:53.569918+00:00"
+}

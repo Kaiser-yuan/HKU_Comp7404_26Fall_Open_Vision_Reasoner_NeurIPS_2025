@@ -1,0 +1,15 @@
+{
+  "dataset_sha256": "d6254d7a9f95575c3ef638a86d35bcc274af2e0ab9b5294844456f7f7d4ccaa8",
+  "max_new_tokens": 4096,
+  "max_pixels": 1003520,
+  "min_pixels": 200704,
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "do_sample": false,
+  "prompt_version": "boxed-options-v1",
+  "torch": "2.8.0+cu128",
+  "transformers": "4.57.1",
+  "scoring": "conservative exact/rational match, NOT official MathVision evaluator",
+  "reference_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "note": "Reference settings only; dataset fingerprints are verified against Qwen merged inputs."
+}

@@ -1,0 +1,24 @@
+{
+  "protocol_id": "ovr-mathvision-independent-v1",
+  "status": "candidate; freeze after paid pilot",
+  "seed": 42,
+  "dataset": {
+    "repo": "MathLLMs/MathVision",
+    "revision": "2837ddb3f13abaf6b3997c12d80753e5470bd46a",
+    "file": "data/test-00000-of-00001-3532b8d3f1b4047a.parquet",
+    "sha256": "bcb3078a77bd6ee0e4e22135d53b9a48604fcd1b62dec69e279e812ba4dd7d37",
+    "count": 3040
+  },
+  "models": {
+    "base": {"repo": "Qwen/Qwen2.5-VL-7B-Instruct", "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5"},
+    "coldstart": {"repo": "Kangheng/OVR-7B-ColdStart", "revision": "52ad9cb58c52d8e5f8c18abee99f77f78e9f6be3"},
+    "rl": {"repo": "Kangheng/OVR-7B-RL", "revision": "53d5680f59196df1533ca5ec55d9046507c1e6d7"}
+  },
+  "generation": {"temperature": 0, "top_p": 1, "n": 1, "max_tokens": 32768, "seed": 42},
+  "engine": {"max_model_len": 40960, "dtype": "bfloat16", "tensor_parallel_size": 1, "gpu_memory_utilization": 0.85, "max_num_seqs": 2},
+  "image": {"min_pixels": 200704, "max_pixels": 1003520},
+  "batch_size": 2,
+  "prompt_normalization": "remove dataset literal <imageN> placeholders; actual image supplied separately",
+  "prompt_suffix": "Solve the problem using the image. Show your reasoning, then put the final answer in \\boxed{}. For multiple-choice questions, put only the option letter in the box.",
+  "upstream_mathvision_commit": "a1f5cc3add200c0cd080fad463e500f44ef1fb41"
+}

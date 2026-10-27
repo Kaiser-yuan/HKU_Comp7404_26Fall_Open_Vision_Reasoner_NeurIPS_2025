@@ -1,0 +1,317 @@
+{
+  "model": "coldstart",
+  "phase": "pilot",
+  "run_fingerprint": "a05cbf818d77738ff686837cdf454e3e74631672a8e7595e2bbc6a14098f64e2",
+  "identity": {
+    "hardware": {
+      "name": "NVIDIA GeForce RTX 4090 D",
+      "memory_bytes": 50864390144,
+      "capability": [
+        8,
+        9
+      ],
+      "torch_cuda": "12.8",
+      "packages": {
+        "torch": "2.8.0+cu128",
+        "torchvision": "0.23.0+cu128",
+        "transformers": "4.57.1",
+        "accelerate": "1.11.0",
+        "huggingface-hub": "0.35.3",
+        "safetensors": "0.6.2",
+        "tokenizers": "0.22.1",
+        "Pillow": "11.3.0"
+      },
+      "python": "3.12.3",
+      "driver": "580.105.08"
+    },
+    "checkpoint": {
+      "repo": "Kangheng/OVR-7B-ColdStart",
+      "revision": "52ad9cb58c52d8e5f8c18abee99f77f78e9f6be3",
+      "files": [
+        {
+          "name": "added_tokens.json",
+          "size": 707,
+          "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680"
+        },
+        {
+          "name": "chat_template.json",
+          "size": 937,
+          "sha256": "13d0c439a205120d4f816c375a6ad56d2f7ac17ef8a719eea354112aa3f96145"
+        },
+        {
+          "name": "config.json",
+          "size": 1375,
+          "sha256": "7f06b04f260b9c6dfb65c95bb866b8889ac7692e3c8d59f1c8641bec8c2a71a3"
+        },
+        {
+          "name": "generation_config.json",
+          "size": 243,
+          "sha256": "bd9b62d54c30f515c984606435b8ed171fa4fced3981ccb4582c49949beeb69d"
+        },
+        {
+          "name": "merges.txt",
+          "size": 1671853,
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+        },
+        {
+          "name": "model-merged.safetensors",
+          "size": 16584823584,
+          "sha256": "5f6f6a30b9cfb65e41e29e522eb5ce229fa14f5dea9b25f40fbb4a6692483099"
+        },
+        {
+          "name": "model.safetensors.index.json",
+          "size": 51786,
+          "sha256": "69e12cfa7a2e50cc8923a8bec5a0c8d3099c67a0622e2896a667cabba8f11833"
+        },
+        {
+          "name": "payload.json",
+          "size": 73447,
+          "sha256": "068bf6c09a7d1e52cea15656f4b7ebea8f95fa28dee6171970064cd18a0f0e64"
+        },
+        {
+          "name": "preprocessor_config.json",
+          "size": 350,
+          "sha256": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0"
+        },
+        {
+          "name": "special_tokens_map.json",
+          "size": 613,
+          "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+        },
+        {
+          "name": "tokenizer.json",
+          "size": 7031645,
+          "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+        },
+        {
+          "name": "tokenizer_config.json",
+          "size": 8081,
+          "sha256": "1005b5001a1a7c83eed25fff152e00303502fa756018c93855050691c5a347b8"
+        },
+        {
+          "name": "vocab.json",
+          "size": 2776833,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        }
+      ],
+      "view": {
+        "source_weight_files": [
+          "model-merged.safetensors"
+        ],
+        "single_weight_alias": true,
+        "upstream_files_modified": false
+      }
+    },
+    "runtime": {
+      "vllm": "0.11.0",
+      "torch": "2.8.0+cu128",
+      "transformers": "4.57.1"
+    },
+    "code": {
+      "ovr/vllm_evaluation.py": "6979f80acdf6743ba26dc2d538647e9377f3c746f548350dbcb6601a46315407",
+      "ovr/repetition_preflight.py": "d5133d86e9f0acb9c648cc0069473fbd24b3f1c0b73932193e05cb3a8bdfbd68",
+      "ovr/diagnostic_vllm.py": "15f5c10fb6e51df418d3e3c0a388e8560b35d7df61d97e57e02b4f1365082865",
+      "ovr/cloud.py": "be502e03d74fc408d433bed619d998e2374388a88cf0ed7f8b3dedf22479eab2",
+      "ovr/cloud_backend.py": "73333a19e91f281f91fb6c8469683cc618babe4778fc5eeba13ceef3c8113881"
+    },
+    "preflight_evidence": {
+      "complete.json": "1bf6eb438e392bd89ce0d22baf5da0fb97e93a8a93bcbb795e44253fe8fb111c",
+      "probability_review.json": "cdacc2ff532e9e9e46acbf9b1f29c14b8fa4e13f3d781050c532d97f4a8cad99",
+      "coldstart/raw": "0f36071be87a5c614a7934aaee21bd5ef9f7f34aa8a32dca67c16516f4017667",
+      "coldstart/scored": "5fa0e351f306806a45ede7d57ba3be21c5abaca1e72ef98845ba38f6a072dfaf",
+      "rl/raw": "f39f94f2ad9fe2768a9223e60661e58da7f8ab09436474ff9598ff14e76207d0",
+      "rl/scored": "ebb36d7cbb54ad3d3a4d2b947e4dcd42c3e5a5bf3b892ecaf6ce0880c4fd76e3"
+    }
+  },
+  "protocol": {
+    "protocol_id": "ovr-vllm-shared100-checkpoint-defaults8192-v1",
+    "status": "PREPARED_NOT_RUN; requires preflight review and a separately confirmed time/cost budget",
+    "purpose": "Paired first-attempt 100-question OVR subset evaluation under one shared sampling/length protocol; not full MathVision or paper reproduction",
+    "shared_dir": "workstreams/shared_test100",
+    "inputs_sha256": "b6d69309e6fc080da3ffb54286f77e2bfa1e41cc2f4dd05f59d2b1d27ebf3598",
+    "references_sha256": "131b3b901071f9b4adc0e6dcc72cff2ac669101a0513a74bec11bced61251710",
+    "models": {
+      "coldstart": {
+        "repo": "Kangheng/OVR-7B-ColdStart",
+        "revision": "52ad9cb58c52d8e5f8c18abee99f77f78e9f6be3"
+      },
+      "rl": {
+        "repo": "Kangheng/OVR-7B-RL",
+        "revision": "53d5680f59196df1533ca5ec55d9046507c1e6d7"
+      }
+    },
+    "backend": "vllm-0.11.0",
+    "dtype": "bfloat16",
+    "attention": "vllm-auto; record actual backend from server log",
+    "quantization": null,
+    "seed": 42,
+    "batch_size": 1,
+    "max_new_tokens": 8192,
+    "max_context_tokens": 16384,
+    "per_question_max_s": 300,
+    "canary_questions": 5,
+    "expected_pilot_questions": 100,
+    "image_processor": {
+      "min_pixels": 200704,
+      "max_pixels": 1003520
+    },
+    "generation": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 40,
+      "repetition_penalty": 1.0,
+      "num_beams": 1
+    },
+    "limits": "Use all fixed 100 IDs per model. No automatic pair launch, answer retry or best-of selection. Empty responses and truncation remain in official scoring. An uncertain HTTP attempt requires inspection before resume. Teammate Qwen greedy/4096 results are a different protocol unless rerun; cannot claim uniform three-model comparison. Seed does not guarantee bitwise reproducibility in online vLLM serving.",
+    "runtime": {
+      "python": "3.12",
+      "torch_cuda": "12.8",
+      "environment_source": "AutoDL PyTorch image via isolated system-site-packages venv",
+      "base_python": "/root/miniconda3/bin/python"
+    },
+    "level_counts": {
+      "1": 9,
+      "5": 25,
+      "3": 12,
+      "2": 29,
+      "4": 25
+    },
+    "max_image_side": null,
+    "image_processor_use_fast": true,
+    "results_namespace": "cloud_vllm_shared1008192_v1",
+    "config_source": "configs/cloud_vllm_shared1008192.json",
+    "prompt_version": "boxed-options-v1",
+    "source_bundle_sha256": "ea39a4232591b4dffa41bde55a6288d3e0a1be075620bfed22ffc7308d12d19e",
+    "scope_description": "Same 100 questions and original image bytes as teammate Qwen run",
+    "diagnostic_only": false,
+    "preflight_evidence_namespace": "cloud_vllm_preflight8192_probability_review_v1"
+  },
+  "selected_ids": [
+    "40",
+    "51",
+    "72",
+    "154",
+    "215",
+    "246",
+    "272",
+    "302",
+    "334",
+    "336",
+    "457",
+    "465",
+    "507",
+    "523",
+    "598",
+    "601",
+    "612",
+    "633",
+    "663",
+    "667",
+    "674",
+    "689",
+    "703",
+    "783",
+    "836",
+    "872",
+    "879",
+    "903",
+    "927",
+    "936",
+    "1000",
+    "1005",
+    "1052",
+    "1080",
+    "1118",
+    "1165",
+    "1187",
+    "1213",
+    "1248",
+    "1274",
+    "1296",
+    "1301",
+    "1324",
+    "1370",
+    "1392",
+    "1401",
+    "1414",
+    "1510",
+    "1527",
+    "1533",
+    "1542",
+    "1552",
+    "1570",
+    "1618",
+    "1684",
+    "1710",
+    "1748",
+    "1770",
+    "1782",
+    "1787",
+    "1858",
+    "1904",
+    "1916",
+    "1951",
+    "1974",
+    "1981",
+    "2016",
+    "2073",
+    "2082",
+    "2104",
+    "2149",
+    "2164",
+    "2176",
+    "2220",
+    "2221",
+    "2238",
+    "2267",
+    "2271",
+    "2336",
+    "2381",
+    "2392",
+    "2423",
+    "2450",
+    "2529",
+    "2536",
+    "2557",
+    "2632",
+    "2713",
+    "2716",
+    "2725",
+    "2760",
+    "2816",
+    "2831",
+    "2911",
+    "2918",
+    "2926",
+    "2950",
+    "2968",
+    "2992",
+    "3034"
+  ],
+  "started_utc": "2026-10-23T01:31:56.457934+00:00",
+  "expected": 100,
+  "state": "complete",
+  "runtime_validated_on_gpu": true,
+  "backend": {
+    "backend": "vllm-0.11.0-openai-local-http",
+    "generation": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 40,
+      "repetition_penalty": 1.0,
+      "num_beams": 1
+    },
+    "max_new_tokens": 8192,
+    "max_context_tokens": 16384,
+    "seed_scope": "42 per request",
+    "image_validation": "Original JPEG plus processor token-ID check; pixel influence supported by disclosed preflight engineering review",
+    "latency_scope": "HTTP generation and response validation; CPU input preprocessing excluded",
+    "formal_subset": true,
+    "full_mathvision_reproduction": false
+  },
+  "completed": 100,
+  "elapsed_s": 11164.659388054162,
+  "ended_utc": "2026-10-23T04:38:01.117415+00:00"
+}

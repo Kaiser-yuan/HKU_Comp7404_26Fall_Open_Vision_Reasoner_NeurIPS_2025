@@ -1,0 +1,72 @@
+{
+  "command": [
+    "/root/ovr-course-env/vllm011/bin/python",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "/root/autodl-tmp/OVR_CLOUD_STARTER/models/rl-53d5680f5919/load",
+    "--served-model-name",
+    "ovr-rl",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "47337",
+    "--tensor-parallel-size",
+    "1",
+    "--gpu-memory-utilization",
+    "0.6",
+    "--dtype",
+    "bfloat16",
+    "--max-model-len",
+    "24576",
+    "--max-num-seqs",
+    "1",
+    "--max-num-batched-tokens",
+    "24576",
+    "--generation-config",
+    "auto",
+    "--seed",
+    "42",
+    "--enforce-eager",
+    "--limit-mm-per-prompt",
+    "{\"image\":1,\"video\":0}",
+    "--mm-processor-kwargs",
+    "{\"min_pixels\": 200704, \"max_pixels\": 1003520, \"use_fast\": true}",
+    "--disable-log-requests"
+  ],
+  "started_utc": "2026-10-26T02:12:28.399051+00:00",
+  "stopped": true,
+  "pid": 4255,
+  "served_models": {
+    "object": "list",
+    "data": [
+      {
+        "id": "ovr-rl",
+        "object": "model",
+        "created": 1792980814,
+        "owned_by": "vllm",
+        "root": "/root/autodl-tmp/OVR_CLOUD_STARTER/models/rl-53d5680f5919/load",
+        "parent": null,
+        "max_model_len": 24576,
+        "permission": [
+          {
+            "id": "modelperm-f0b9027ac2ef4272a1f588ba70fe96c1",
+            "object": "model_permission",
+            "created": 1792980814,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      }
+    ]
+  },
+  "exit_code": 0,
+  "ended_utc": "2026-10-26T03:19:45.208008+00:00"
+}

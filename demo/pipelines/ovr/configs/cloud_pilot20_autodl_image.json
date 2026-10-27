@@ -1,0 +1,46 @@
+{
+  "protocol_id": "ovr-cloud-bf16-pilot20-image312-cu128-v1",
+  "status": "ready for GPU canary; runtime not yet GPU-verified",
+  "purpose": "Engineering pilot; independent protocol, not full paper reproduction",
+  "shared_dir": "workstreams/shared_pilot20",
+  "inputs_sha256": "f0098d43e934397310df64337ee2da0e41bde9b9227fb4ddbfde82d3f8f68313",
+  "references_sha256": "72029097c13b1c86a464ace6cc1bfd4d23555f6eae7c701ac49d7a36829698a5",
+  "models": {
+    "coldstart": {
+      "repo": "Kangheng/OVR-7B-ColdStart",
+      "revision": "52ad9cb58c52d8e5f8c18abee99f77f78e9f6be3"
+    },
+    "rl": {
+      "repo": "Kangheng/OVR-7B-RL",
+      "revision": "53d5680f59196df1533ca5ec55d9046507c1e6d7"
+    }
+  },
+  "backend": "transformers",
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "quantization": null,
+  "seed": 42,
+  "batch_size": 1,
+  "max_new_tokens": 4096,
+  "max_context_tokens": 8192,
+  "per_question_max_s": 600,
+  "canary_questions": 2,
+  "expected_pilot_questions": 20,
+  "image_processor": {
+    "min_pixels": 200704,
+    "max_pixels": 1003520
+  },
+  "generation": {
+    "do_sample": false,
+    "num_beams": 1,
+    "repetition_penalty": 1.0
+  },
+  "limits": "BF16 cloud protocol supersedes the unfrozen 4-bit proposal for our pair. Share this protocol with the other experiment owner. Do not pool different protocols.",
+  "runtime": {
+    "python": "3.12",
+    "torch_cuda": "12.8",
+    "environment_source": "AutoDL PyTorch image via isolated system-site-packages venv",
+    "base_python": "/root/miniconda3/bin/python"
+  },
+  "config_source": "configs/cloud_pilot20_autodl_image.json"
+}

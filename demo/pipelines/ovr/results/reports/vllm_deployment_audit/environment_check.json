@@ -1,0 +1,19 @@
+{
+  "pip_check_exit": 0,
+  "pip_check": "No broken requirements found.",
+  "vllm_environment": {
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "transformers": "4.57.1",
+    "vllm": "0.11.0",
+    "xformers": "0.0.32.post1",
+    "numpy": "2.2.6"
+  },
+  "original_environment": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.1",
+    "numpy": "2.2.6"
+  },
+  "gpu": "NVIDIA GeForce RTX 4090 D, 49140 MiB, 0 MiB",
+  "gpu_query_exit": 0
+}

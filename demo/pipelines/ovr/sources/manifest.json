@@ -1,0 +1,48 @@
+{
+  "retrieved_date": "2026-10-21",
+  "mathvision_commit": "a1f5cc3add200c0cd080fad463e500f44ef1fb41",
+  "files": [
+    {
+      "path": "vendor/mathvision/evaluate.py",
+      "url": "https://raw.githubusercontent.com/mathllm/MATH-V/a1f5cc3add200c0cd080fad463e500f44ef1fb41/evaluation/evaluate.py",
+      "sha256": "499b9665932e35e0ac6fe6c423f440b7227a1cffde07f3b7310fe98d53c7e36a",
+      "bytes": 4159
+    },
+    {
+      "path": "vendor/mathvision/utils.py",
+      "url": "https://raw.githubusercontent.com/mathllm/MATH-V/a1f5cc3add200c0cd080fad463e500f44ef1fb41/evaluation/utils.py",
+      "sha256": "9735268802010d3b5c5fb26b6b39d6684a342e85daf4daa4c20ecbbe6079753d",
+      "bytes": 14556
+    },
+    {
+      "path": "vendor/mathvision/LICENSE",
+      "url": "https://raw.githubusercontent.com/mathllm/MATH-V/a1f5cc3add200c0cd080fad463e500f44ef1fb41/LICENSE",
+      "sha256": "8f6401fb0b1fbfcac17aac8d61e4e1b0d2de9aa190d8aa655fedc5fd783b2ace",
+      "bytes": 1070
+    },
+    {
+      "path": "vendor/mathvision/README.upstream.md",
+      "url": "https://raw.githubusercontent.com/mathllm/MATH-V/a1f5cc3add200c0cd080fad463e500f44ef1fb41/README.md",
+      "sha256": "14922087a3efa615b0eab2ffba8d36180256cb2906e73b789302f32c6090b005",
+      "bytes": 9853
+    },
+    {
+      "path": "sources/OVR_NeurIPS2025.pdf",
+      "url": "https://papers.nips.cc/paper_files/paper/2025/file/06d86daa7001b7ea755ac4c80dc93497-Paper-Conference.pdf",
+      "sha256": "769e0b5c349e44657dca6a5558480972f87e7df7040a36c60c92447da0fbbf6f",
+      "bytes": 1395871
+    },
+    {
+      "path": "sources/OVR_arxiv_v2.html",
+      "url": "https://arxiv.org/html/2507.05255v2",
+      "sha256": "e3f2621befd7f2c999f84828d0416032209348b9ba1128f5832f2579b22e0958",
+      "bytes": 314909
+    },
+    {
+      "path": "sources/OVR_README.md",
+      "url": "https://raw.githubusercontent.com/Open-Reasoner-Zero/Open-Vision-Reasoner/main/README.md",
+      "sha256": "9a453fe35d95d30a6e86a48743465b8c309623e1ca9ee694de4b1d0f14b48459",
+      "bytes": 6765
+    }
+  ]
+}

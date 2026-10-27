@@ -1,0 +1,176 @@
+{
+  "checked_utc": "2026-10-23T01:35:05.751736+00:00",
+  "state": "FORMAL_200_RUNNING",
+  "active_config": "configs/cloud_shared100.json",
+  "protocol_id": "ovr-qwen-shared100-bf16-fast-image312-v1",
+  "real_ovr_generations": 32,
+  "real_checkpoint_weight_files": 5,
+  "gpu_inference_verified": true,
+  "cloud_gpu_compatibility_checked": true,
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4090 D",
+    "memory_bytes": 50864390144,
+    "capability": [
+      8,
+      9
+    ],
+    "torch_cuda": "12.8",
+    "packages": {
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "transformers": "4.57.1",
+      "accelerate": "1.11.0",
+      "huggingface-hub": "0.35.3",
+      "safetensors": "0.6.2",
+      "tokenizers": "0.22.1",
+      "Pillow": "11.3.0"
+    },
+    "python": "3.12.3",
+    "driver": "580.105.08"
+  },
+  "local_tests_passed": 46,
+  "cloud_tests_passed": 23,
+  "fast_processor_tiny_random_cpu_contract": "PASSED",
+  "question_count": 100,
+  "formal_generations_planned": 200,
+  "canary_generations_planned": 4,
+  "protocol_sha256": "ae0562ff7e6e461131739a700dedb25f64fe9bb3c3a9e42a7cdb1858bd5722ac",
+  "code_sha256": {
+    "ovr/cloud.py": "be502e03d74fc408d433bed619d998e2374388a88cf0ed7f8b3dedf22479eab2",
+    "ovr/cloud_backend.py": "73333a19e91f281f91fb6c8469683cc618babe4778fc5eeba13ceef3c8113881",
+    "ovr/shared100.py": "33a070792aa2237b8f7cdcadcc512a97e99f68337ffc47b9b03e09a04ee786cd"
+  },
+  "qwen_raw_responses_present": false,
+  "access_check_scope": "Authenticated official Hugging Face access to both pinned revisions and every weight HEAD verified; credentials stored outside repository",
+  "remaining": [
+    "Finish current fixed preflight; no more experiments.",
+    "Generate exactly the same 100 IDs once for each OVR model under the fixed vLLM protocol.",
+    "Officially score and verify complete 100/100 coverage per model; back up ZIP and verify on Mac.",
+    "Deliver statistics and raw-output handoff, sync code/reports to private GitHub, and notify user to stop GPU."
+  ],
+  "models": {
+    "coldstart": {
+      "verified_manifest": true,
+      "final_weight_files": 1,
+      "final_weight_bytes": 16584823584
+    },
+    "rl": {
+      "verified_manifest": true,
+      "final_weight_files": 4,
+      "final_weight_bytes": 16584413408
+    }
+  },
+  "canary": {
+    "coldstart": {
+      "generated": 2,
+      "rows": [
+        {
+          "question_id": "40",
+          "output_tokens": 4096,
+          "finish_reason": "length",
+          "latency_s": 78.43718830496073,
+          "image_tensor_checked": true,
+          "peak_gpu_allocated_bytes": 16922271744
+        },
+        {
+          "question_id": "51",
+          "output_tokens": 4096,
+          "finish_reason": "length",
+          "latency_s": 76.19777664914727,
+          "image_tensor_checked": true,
+          "peak_gpu_allocated_bytes": 16865068032
+        }
+      ],
+      "official_scored_correct": 0,
+      "official_scored_n": 2,
+      "raw_sha256": "f7490a987d1f310ef29f47ce26faa1fc1d9801091293df26b94bf9131d06846c"
+    },
+    "rl": {
+      "generated": 2,
+      "rows": [
+        {
+          "question_id": "40",
+          "output_tokens": 4096,
+          "finish_reason": "length",
+          "latency_s": 78.40242769941688,
+          "image_tensor_checked": true,
+          "peak_gpu_allocated_bytes": 16922667008
+        },
+        {
+          "question_id": "51",
+          "output_tokens": 4096,
+          "finish_reason": "length",
+          "latency_s": 76.01831064745784,
+          "image_tensor_checked": true,
+          "peak_gpu_allocated_bytes": 16865767424
+        }
+      ],
+      "official_scored_correct": 0,
+      "official_scored_n": 2,
+      "raw_sha256": "9705be52021669397e59524d0ccb8cbfd0fc29e44d294c4d978dcd901b2a3fad"
+    }
+  },
+  "formal_generations": 2,
+  "canary_interpretation": "Both real checkpoints loaded on CUDA and image tensors verified; all four preserved responses hit 4096 tokens. No model passed the strict non-truncation gate. Official scorer returns 0/2 for each; this tiny engineering check is not an accuracy estimate.",
+  "diagnostic": {
+    "config": "configs/cloud_diagnostic_sampling.json",
+    "entrypoint": "python -m ovr.diagnostic_sampling --model {coldstart,rl}",
+    "status": "COMPLETE",
+    "max_new_generations": 4,
+    "sampling": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 0
+    },
+    "formal_protocol_changed": false,
+    "original_outputs_replaced": false,
+    "normal_stop": {
+      "coldstart": 2,
+      "rl": 0
+    },
+    "correct_out_of_2": {
+      "coldstart": 1,
+      "rl": 0
+    },
+    "local_rescoring_matches_cloud": true,
+    "comparison": "results/reports/cloud_diagnostic_sampling_comparison.json"
+  },
+  "greedy_canary_generations": 4,
+  "sampling_diagnostic_generations": 4,
+  "gpu_task_state": "Formal ColdStart inference is active, followed by RL under the authorized fixed protocol. Leave GPU on; notify user on completion/error/cap.",
+  "tf_checkpoint_defaults_control_generations": 2,
+  "vllm_deployment_audit_generations": 6,
+  "vllm_length_probe_generations": 1,
+  "vllm_audit_report": "results/reports/vllm_deployment_audit/conclusion.json",
+  "next_bounded_preflight": {
+    "state": "PREPARED_NOT_RUN",
+    "config": "configs/cloud_vllm_preflight8192.json",
+    "entrypoint": "python -m ovr.repetition_preflight --run-bounded-gpu-preflight",
+    "new_question_ids": [
+      "689",
+      "2968",
+      "465",
+      "1542",
+      "2016"
+    ],
+    "max_http_generations": 13,
+    "max_answer_generations": 10,
+    "max_one_token_image_probes": 3,
+    "hard_wallclock_limit_minutes": 40,
+    "formal_auto_start": false,
+    "report": "results/reports/vllm_deployment_audit/下一轮排查与100题启动条件.txt",
+    "local_tests_passed": 42,
+    "gpu_runtime_verified": false
+  },
+  "formal_generations_as_of_utc": "2026-10-23T01:33:45+00:00",
+  "real_generations_recorded_as_of_utc": "2026-10-23T01:33:45+00:00",
+  "formal_generations_authorized": 200,
+  "formal_config": "configs/cloud_vllm_shared1008192.json",
+  "formal_deadline_utc": "2026-10-23T11:20:08+00:00",
+  "cloud_new_contract_tests_passed": 8,
+  "gpu_hourly_price_cny": 2.78,
+  "heartbeat_id": "ovr-100",
+  "formal_started_utc": "2026-10-23T01:31:54.365064+00:00",
+  "preflight_archive_verified": true,
+  "preflight_mac_rescoring_matches_cloud": true
+}

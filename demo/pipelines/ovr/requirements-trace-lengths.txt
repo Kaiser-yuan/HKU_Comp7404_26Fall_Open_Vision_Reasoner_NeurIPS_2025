@@ -1,0 +1,6 @@
+-r requirements-local.txt
+tokenizers==0.22.1
+huggingface_hub==0.35.3
+hf_xet==1.7.0
+requests==2.34.2
+matplotlib==3.11.2

@@ -1,0 +1,147 @@
+[
+  {
+    "file": "cold_start_1.parquet",
+    "size": 495525915,
+    "rows": 48702,
+    "groups": [
+      {
+        "index": 0,
+        "rows": 48702,
+        "columns": [
+          {
+            "name": "question",
+            "size": 6255041,
+            "dictionary_offset": 4,
+            "data_offset": 567604,
+            "offset_index": false,
+            "column_index": false
+          },
+          {
+            "name": "answer",
+            "size": 489267796,
+            "dictionary_offset": 6255838,
+            "data_offset": 38626939,
+            "offset_index": false,
+            "column_index": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "cold_start_2.parquet",
+    "size": 3421654102,
+    "rows": 290518,
+    "groups": [
+      {
+        "index": 0,
+        "rows": 290518,
+        "columns": [
+          {
+            "name": "question",
+            "size": 35180750,
+            "dictionary_offset": 4,
+            "data_offset": 676321,
+            "offset_index": false,
+            "column_index": false
+          },
+          {
+            "name": "answer",
+            "size": 3386470872,
+            "dictionary_offset": 35181247,
+            "data_offset": 45231141,
+            "offset_index": false,
+            "column_index": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "cold_start_3.parquet",
+    "size": 4895894813,
+    "rows": 633126,
+    "groups": [
+      {
+        "index": 0,
+        "rows": 633126,
+        "columns": [
+          {
+            "name": "question",
+            "size": 140534004,
+            "dictionary_offset": 4,
+            "data_offset": 579375,
+            "offset_index": false,
+            "column_index": false
+          },
+          {
+            "name": "answer",
+            "size": 4755357819,
+            "dictionary_offset": 140534754,
+            "data_offset": 148322967,
+            "offset_index": false,
+            "column_index": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "cold_start_4.parquet",
+    "size": 2262109188,
+    "rows": 588509,
+    "groups": [
+      {
+        "index": 0,
+        "rows": 588509,
+        "columns": [
+          {
+            "name": "question",
+            "size": 215623451,
+            "dictionary_offset": 4,
+            "data_offset": 832536,
+            "offset_index": false,
+            "column_index": false
+          },
+          {
+            "name": "answer",
+            "size": 2046481435,
+            "dictionary_offset": 215624857,
+            "data_offset": 218356688,
+            "offset_index": false,
+            "column_index": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "cold_start_5.parquet",
+    "size": 709125090,
+    "rows": 77069,
+    "groups": [
+      {
+        "index": 0,
+        "rows": 77069,
+        "columns": [
+          {
+            "name": "question",
+            "size": 8950469,
+            "dictionary_offset": 4,
+            "data_offset": 499579,
+            "offset_index": false,
+            "column_index": false
+          },
+          {
+            "name": "answer",
+            "size": 700169545,
+            "dictionary_offset": 8951120,
+            "data_offset": 18172637,
+            "offset_index": false,
+            "column_index": false
+          }
+        ]
+      }
+    ]
+  }
+]

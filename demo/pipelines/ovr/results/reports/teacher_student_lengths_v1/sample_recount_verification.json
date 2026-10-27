@@ -1,0 +1,17 @@
+{
+  "all_byte_identical": true,
+  "before": {
+    "teacher_lengths.jsonl": "3989a7011757ece9f3d4404c40601e4083e4961d9f1a1a858de2f02f062f3d63",
+    "student_lengths.jsonl": "b241322dcf8802825552e64dc87cbbb7bea514021a03a96fd4d390c68e073be4",
+    "comparison.json": "483e7422a877a945a72292fe2af086b74640138b13c6c84dc137854f399c9b42",
+    "summary.csv": "372f1df49d5eb44ef47e03b117cf76743178f60a090f43bf0d7de45da3cd1bb7"
+  },
+  "after": {
+    "teacher_lengths.jsonl": "3989a7011757ece9f3d4404c40601e4083e4961d9f1a1a858de2f02f062f3d63",
+    "student_lengths.jsonl": "b241322dcf8802825552e64dc87cbbb7bea514021a03a96fd4d390c68e073be4",
+    "comparison.json": "483e7422a877a945a72292fe2af086b74640138b13c6c84dc137854f399c9b42",
+    "summary.csv": "372f1df49d5eb44ef47e03b117cf76743178f60a090f43bf0d7de45da3cd1bb7"
+  },
+  "teacher_n": 1000,
+  "student_n": 40
+}

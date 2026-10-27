@@ -1,0 +1,40 @@
+{
+  "status": "STUDENT_ANALYSIS_VERIFIED_TEACHER_NOT_ACQUIRED",
+  "full_three_group_comparison_complete": false,
+  "student_unique_trajectories": 40,
+  "teacher_sample_n": 0,
+  "teacher_planned_n": 1000,
+  "new_model_generations": 0,
+  "training_runs": 0,
+  "gpu_used": false,
+  "paid_model_calls": 0,
+  "tokenizer_matches_both_pinned_checkpoints": true,
+  "source_raw_sha256_unchanged": {
+    "results/raw/cloud_vllm_budget20_prefix_v1/coldstart.jsonl": "35cb97edaca83f14d89d2add701ca7800e24b0cc2782dda95e93fec91437878c",
+    "results/raw/cloud_vllm_budget20_prefix_v1/rl.jsonl": "581ff26a75746084a5c781b906ba0d126951043343c834e6deb6c861cb097878",
+    "results/raw/cloud_vllm_shared1008192_v1/pilot/coldstart.jsonl": "456467dc37b2d15cdd7785668cadbdaa44046759aedce0a1b8f1dbc32a8f09e1",
+    "results/raw/cloud_vllm_shared1008192_v1/pilot/rl.jsonl": "13a6082b24841c9fec523c73408adb0d8192058781241af61520195e7e05e045"
+  },
+  "student_censored_reasoning_n": 4,
+  "student_boundary_test_cases_passed": 7,
+  "document_qa_pages": 1,
+  "environment": {
+    "pyarrow": "21.0.0",
+    "tokenizers": "0.22.1",
+    "huggingface_hub": "0.35.3",
+    "hf_xet": "1.7.0",
+    "requests": "2.34.2"
+  },
+  "files_sha256": {
+    "ovr/trace_lengths.py": "8ad0c9fc3878f56313efea57180d40c353d10bebbaa8c5ce908943e97a09fb85",
+    "tests/test_trace_lengths.py": "66f6b27e86f2a5a0cc40cfaad463b17209fa98be1af0358e24afdc45220679b7",
+    "workstreams/teacher_lengths/protocol.json": "474f0b44807dec9a6449275365c6a17dce691f1117e71bf7357d64cf05742faa",
+    "workstreams/teacher_lengths/dataset_api.json": "0dcaec7008aab0d3636a2d0f542268b3348871181f61adb7adb2f7fac94179c3",
+    "workstreams/teacher_lengths/parquet_metadata.json": "7f7fa04fc47c2cc7668a40062800bf17616e673fb604c71565aa292a8953acc7",
+    "results/reports/teacher_student_lengths_v1/comparison.json": "59dcf6576a8a60c3ea95b0968ba55658224dea0b513ae4dc2edf1561ba12b6e8",
+    "results/reports/teacher_student_lengths_v1/student_lengths.jsonl": "b241322dcf8802825552e64dc87cbbb7bea514021a03a96fd4d390c68e073be4",
+    "results/reports/teacher_student_lengths_v1/summary.csv": "316b153e14a11a373a840620897d2d4fdadc33bee59f98f896afbf36e1911bb6",
+    "results/reports/teacher_student_lengths_v1/download_status.json": "5fb18160dd99ec5f4026310354d40073c20d9b348ba04f0f64343f9807acfc6a",
+    "output/OVR_教师与学生推理长度_阶段结果.docx": "fb2496a8ced2db9292fdf6e67984d955e43525c4bbc81444aeedf93f27e4eb4d"
+  }
+}

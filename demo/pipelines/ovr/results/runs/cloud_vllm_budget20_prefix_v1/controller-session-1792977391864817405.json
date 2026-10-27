@@ -1,0 +1,28 @@
+{
+  "state": "generation_complete_pending_cpu_scoring",
+  "started_utc": "2026-10-26T01:16:31.864790+00:00",
+  "minutes_limit": 180.0,
+  "run_fingerprint": "37fbd6443419566fe02ed67b2fed8277c015e2d82e9fb3b67a2d45fcbaba5229",
+  "instance_power_or_billing_changed": false,
+  "servers_stopped": true,
+  "planned_generations": 40,
+  "hardware": {
+    "versions": {
+      "vllm": "0.11.0",
+      "torch": "2.8.0+cu128",
+      "transformers": "4.57.1"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090 D",
+    "vram_bytes": 50864390144,
+    "cuda": "12.8"
+  },
+  "current_model": "rl",
+  "completed": {
+    "coldstart": 20,
+    "rl": 20
+  },
+  "ended_utc": "2026-10-26T03:19:45.209562+00:00",
+  "task_runtime_s": 7393.344288486987,
+  "gpu_compute_pids_after": [],
+  "gpu_compute_idle_after": true
+}

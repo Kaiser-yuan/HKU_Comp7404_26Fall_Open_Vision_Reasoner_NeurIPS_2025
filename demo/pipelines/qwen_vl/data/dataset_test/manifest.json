@@ -1,0 +1,199 @@
+{
+  "dataset": "MathVision",
+  "repository": "https://github.com/mathllm/MATH-V",
+  "revision": "a1f5cc3add200c0cd080fad463e500f44ef1fb41",
+  "source_file": "data/test.jsonl",
+  "source_split": "test",
+  "source_count": 3040,
+  "source_sha256": "36608758db6205692f59423316ba281a4e2e5f23286452ae31739ed4278133a8",
+  "sample_count": 20,
+  "seed": 7404,
+  "sampling": "Uniform random without replacement using Python random.Random(seed).sample; sorted by original row index",
+  "row_indices_zero_based": [
+    50,
+    301,
+    611,
+    673,
+    1164,
+    1323,
+    1413,
+    1541,
+    1551,
+    1683,
+    1857,
+    1973,
+    2072,
+    2335,
+    2380,
+    2535,
+    2715,
+    2759,
+    2949,
+    3033
+  ],
+  "ids": [
+    "51",
+    "302",
+    "612",
+    "674",
+    "1165",
+    "1324",
+    "1414",
+    "1542",
+    "1552",
+    "1684",
+    "1858",
+    "1974",
+    "2073",
+    "2336",
+    "2381",
+    "2536",
+    "2716",
+    "2760",
+    "2950",
+    "3034"
+  ],
+  "level_counts": {
+    "5": 6,
+    "2": 5,
+    "4": 7,
+    "3": 2
+  },
+  "subject_counts": {
+    "topology": 2,
+    "algebra": 2,
+    "solid geometry": 2,
+    "metric geometry - length": 3,
+    "metric geometry - area": 2,
+    "combinatorial geometry": 3,
+    "logic": 1,
+    "transformation geometry": 1,
+    "metric geometry - angle": 2,
+    "combinatorics": 1,
+    "analytic geometry": 1
+  },
+  "images": [
+    {
+      "id": "51",
+      "image": "images/51.jpg",
+      "sha256": "fe89d93341dc8e1901597534fd22607519b51f82d4750362db2356939b494e45",
+      "bytes": 13999
+    },
+    {
+      "id": "302",
+      "image": "images/302.jpg",
+      "sha256": "251f156db353b714fc40d71fe3b3043ece6aac5d70b6d9b19661a21d1d222eca",
+      "bytes": 20461
+    },
+    {
+      "id": "612",
+      "image": "images/612.jpg",
+      "sha256": "e65e8517cc52946cce2db5b6184d54dff8e063c03ef92abc34e2d623969c1367",
+      "bytes": 6461
+    },
+    {
+      "id": "674",
+      "image": "images/674.jpg",
+      "sha256": "a5bf0fbe6e0fe2c209b05cf0e7984a6763c8a06b02e7ddcb548dc8172819042d",
+      "bytes": 19451
+    },
+    {
+      "id": "1165",
+      "image": "images/1165.jpg",
+      "sha256": "1bd0e9cde365d8a3febb40e903cf7dec6e887a72133d6aee0e0c31d7c37df30e",
+      "bytes": 10061
+    },
+    {
+      "id": "1324",
+      "image": "images/1324.jpg",
+      "sha256": "7b1f28999273445270084ccb5994dc101954af03776ef78c3dc3a2abcf20d6d4",
+      "bytes": 12636
+    },
+    {
+      "id": "1414",
+      "image": "images/1414.jpg",
+      "sha256": "3ae4d01c94030bace2e749ccc9b842362728e15a01067478a815ec1728769c60",
+      "bytes": 16999
+    },
+    {
+      "id": "1542",
+      "image": "images/1542.jpg",
+      "sha256": "88dbb804e197ef0c716182b6fa9dc4a5b26f8db86229f2f8fa1ead1d4e8ddb3d",
+      "bytes": 8517
+    },
+    {
+      "id": "1552",
+      "image": "images/1552.jpg",
+      "sha256": "4665eb072a698157fa641196716206780391ada7f27386e5bd697311ad435b9e",
+      "bytes": 4067
+    },
+    {
+      "id": "1684",
+      "image": "images/1684.jpg",
+      "sha256": "55073245b04297afbd7df055cf83e7d8f8f479e4ab592a708477144435205f87",
+      "bytes": 84402
+    },
+    {
+      "id": "1858",
+      "image": "images/1858.jpg",
+      "sha256": "2671e54abf787ff928936b78c714c45771cdff99846b08cf7918d6b09dec4a4a",
+      "bytes": 47206
+    },
+    {
+      "id": "1974",
+      "image": "images/1974.jpg",
+      "sha256": "cc4ec2ff6c2ffde471cb5de10d5647cc9fa621e6b5fdf6800539267e1021ce18",
+      "bytes": 5909
+    },
+    {
+      "id": "2073",
+      "image": "images/2073.jpg",
+      "sha256": "cdd8bd662d427ab84060e3ad9a56e78cc06d2681b2c983b81612e4d20ac5bf4b",
+      "bytes": 18020
+    },
+    {
+      "id": "2336",
+      "image": "images/2336.jpg",
+      "sha256": "06d320b71db60eb2489060fc013703d5a7d5d821e130b32759b9eaad39185c20",
+      "bytes": 28061
+    },
+    {
+      "id": "2381",
+      "image": "images/2381.jpg",
+      "sha256": "1e6c4c6135be54e2f6c2e3c0b950cee80c1f97ba458aa6cb94d65f09f8ba32fb",
+      "bytes": 13425
+    },
+    {
+      "id": "2536",
+      "image": "images/2536.jpg",
+      "sha256": "ffe8ab8b0b42673586739844f24f5096db0a027175a56dfcdf12fd2994d77820",
+      "bytes": 8922
+    },
+    {
+      "id": "2716",
+      "image": "images/2716.jpg",
+      "sha256": "0b627fb686c68e9dc8e3855d19ba944d3792c84e8ee34b4df520659d7bdb8e91",
+      "bytes": 13542
+    },
+    {
+      "id": "2760",
+      "image": "images/2760.jpg",
+      "sha256": "1dfcd06d5623f1ef0e6ff81f9daecee033e82ee5eefc5f585a798e05c8eff6de",
+      "bytes": 33486
+    },
+    {
+      "id": "2950",
+      "image": "images/2950.jpg",
+      "sha256": "25f3ddd3097191bc1d0fccbb2ced55e1af9d777d40a66b5c32bc08facd8b935e",
+      "bytes": 149266
+    },
+    {
+      "id": "3034",
+      "image": "images/3034.jpg",
+      "sha256": "1e6df62e23e468abc07a727da5a9a04e71f15ec7dcf52407d2c179493453b6a6",
+      "bytes": 185981
+    }
+  ],
+  "license": "MIT",
+  "created_date": "2026-10-22"
+}

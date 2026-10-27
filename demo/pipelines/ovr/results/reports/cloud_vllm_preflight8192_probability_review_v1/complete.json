@@ -1,0 +1,25 @@
+{
+  "five_level_answers_completed": true,
+  "models": {
+    "rl": {
+      "count": 5,
+      "correct": 2,
+      "normal_stop": 3,
+      "length": 2
+    },
+    "coldstart": {
+      "count": 5,
+      "correct": 2,
+      "normal_stop": 3,
+      "length": 2
+    }
+  },
+  "all_servers_stopped": true,
+  "original_strict_probe_gate_passed": false,
+  "reviewed_pixel_influence_supported": true,
+  "review_type": "explicit post-hoc engineering audit; see probability_review.json",
+  "combined_http_generations": 13,
+  "formal_generations": 0,
+  "finished_utc": "2026-10-23T01:31:54.342779+00:00",
+  "next": "Review protocol, error traces and measured cost before separately authorizing the held 100-question evaluation."
+}

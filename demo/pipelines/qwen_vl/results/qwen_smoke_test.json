@@ -1,0 +1,16 @@
+{
+  "model_path": "/root/autodl-tmp/ovr/models/qwen",
+  "image": "/root/autodl-tmp/ovr/data/smoke_test.png",
+  "question": "How many red circles are in the image? Answer with one number.",
+  "expected_answer": "3",
+  "answer": "3",
+  "load_seconds": 5.019171377643943,
+  "generation_seconds": 1.3993658795952797,
+  "generated_tokens": 2,
+  "peak_allocated_vram_gib": 15.487883567810059,
+  "torch_version": "2.8.0+cu128",
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "max_new_tokens": 64,
+  "do_sample": false
+}

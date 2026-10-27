@@ -1,0 +1,21 @@
+﻿id,subject,level,expected_answer,predicted_answer,conservative_match,status,truncated,needs_manual_review,generated_tokens,inference_seconds
+51,topology,5,3,,False,ok,False,True,3,0.7962275696918368
+302,algebra,5,E,E,True,ok,False,False,520,7.727250635623932
+612,algebra,2,A,E,False,ok,False,False,328,4.8836684646084905
+674,solid geometry,5,E,C,False,ok,False,False,480,7.110246225260198
+1165,metric geometry - length,2,D,C,False,ok,False,False,943,13.826351778581738
+1324,metric geometry - area,4,B,80-2\pi,False,ok,False,False,440,6.442847039550543
+1414,topology,2,5,5,True,ok,False,False,206,3.060473995283246
+1542,combinatorial geometry,4,3,,False,ok,True,True,4096,60.39227511640638
+1552,combinatorial geometry,4,4,14,False,ok,False,False,405,5.970472309738398
+1684,logic,4,3,2,False,ok,False,False,718,10.755242151208222
+1858,transformation geometry,4,D,A,False,ok,False,False,524,7.891421930864453
+1974,combinatorial geometry,3,E,B,False,ok,False,False,430,6.290639754384756
+2073,metric geometry - length,5,871,125,False,ok,False,False,592,8.682184601202607
+2336,metric geometry - length,5,C,,False,ok,True,True,4096,60.409915233030915
+2381,metric geometry - angle,4,C,A,False,ok,False,False,647,9.485692544840276
+2536,combinatorics,2,1047,1047,True,ok,False,False,429,6.29812247864902
+2716,metric geometry - area,3,750,666,False,ok,False,False,609,8.91649757605046
+2760,solid geometry,4,A,\text{A},True,ok,False,False,425,6.303078944794834
+2950,analytic geometry,5,8,12,False,ok,False,False,578,8.770283839665353
+3034,metric geometry - angle,2,70,145,False,ok,False,False,523,7.973693518899381

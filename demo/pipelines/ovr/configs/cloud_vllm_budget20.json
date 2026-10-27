@@ -1,0 +1,76 @@
+{
+  "shared_dir": "workstreams/shared_test100",
+  "inputs_sha256": "b6d69309e6fc080da3ffb54286f77e2bfa1e41cc2f4dd05f59d2b1d27ebf3598",
+  "references_sha256": "131b3b901071f9b4adc0e6dcc72cff2ac669101a0513a74bec11bced61251710",
+  "models": {
+    "coldstart": {
+      "repo": "Kangheng/OVR-7B-ColdStart",
+      "revision": "52ad9cb58c52d8e5f8c18abee99f77f78e9f6be3"
+    },
+    "rl": {
+      "repo": "Kangheng/OVR-7B-RL",
+      "revision": "53d5680f59196df1533ca5ec55d9046507c1e6d7"
+    }
+  },
+  "backend": "vllm-0.11.0",
+  "dtype": "bfloat16",
+  "quantization": null,
+  "seed": 42,
+  "image_processor": {
+    "min_pixels": 200704,
+    "max_pixels": 1003520
+  },
+  "generation": {
+    "do_sample": true,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 40,
+    "repetition_penalty": 1.0,
+    "num_beams": 1
+  },
+  "runtime": {
+    "python": "3.12",
+    "torch_cuda": "12.8",
+    "environment_source": "AutoDL PyTorch image via isolated system-site-packages venv",
+    "base_python": "/root/miniconda3/bin/python"
+  },
+  "level_counts": {
+    "1": 9,
+    "5": 25,
+    "3": 12,
+    "2": 29,
+    "4": 25
+  },
+  "image_processor_use_fast": true,
+  "prompt_version": "boxed-options-v1",
+  "protocol_id": "ovr-budget20-same-trajectory-8192-16384-v1",
+  "status": "PREPARED_NOT_RUN",
+  "results_namespace": "cloud_vllm_budget20_prefix_v1",
+  "expected_pilot_questions": 100,
+  "max_image_side": null,
+  "max_new_tokens": 16384,
+  "max_context_tokens": 24576,
+  "per_question_max_s": 900,
+  "batch_size": 1,
+  "budgets": [
+    8192,
+    16384
+  ],
+  "selection_seed": 20261025,
+  "per_level": 4,
+  "excluded_development_ids": [
+    "40",
+    "51",
+    "465",
+    "689",
+    "1542",
+    "2016",
+    "2968"
+  ],
+  "method": "one_16k_request_two_token_prefix_views",
+  "gpu_memory_utilization": 0.6,
+  "server_startup_max_s": 360,
+  "source_protocol_sha256": "41e50730601f36a4903add5602c915115467d310ab5a8705afa09528bc9065a1",
+  "max_generation_requests": 40,
+  "scope": "Post-hoc exploratory follow-up on an already evaluated subset; not an independent holdout or original paper reproduction."
+}

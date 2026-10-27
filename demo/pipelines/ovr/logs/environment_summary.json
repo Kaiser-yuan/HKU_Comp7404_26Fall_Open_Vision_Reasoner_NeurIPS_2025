@@ -1,0 +1,66 @@
+{
+  "coldstart": {
+    "session": "results/runs/cloud_vllm_shared1008192_v1/pilot/coldstart/session-1792719116457920547.json",
+    "started_utc": "2026-10-23T01:31:56.457934+00:00",
+    "ended_utc": "2026-10-23T04:38:01.117415+00:00",
+    "state": "complete",
+    "hardware_and_packages": {
+      "name": "NVIDIA GeForce RTX 4090 D",
+      "memory_bytes": 50864390144,
+      "capability": [
+        8,
+        9
+      ],
+      "torch_cuda": "12.8",
+      "packages": {
+        "torch": "2.8.0+cu128",
+        "torchvision": "0.23.0+cu128",
+        "transformers": "4.57.1",
+        "accelerate": "1.11.0",
+        "huggingface-hub": "0.35.3",
+        "safetensors": "0.6.2",
+        "tokenizers": "0.22.1",
+        "Pillow": "11.3.0"
+      },
+      "python": "3.12.3",
+      "driver": "580.105.08"
+    },
+    "runtime": {
+      "vllm": "0.11.0",
+      "torch": "2.8.0+cu128",
+      "transformers": "4.57.1"
+    }
+  },
+  "rl": {
+    "session": "results/runs/cloud_vllm_shared1008192_v1/pilot/rl/session-1792730286387295281.json",
+    "started_utc": "2026-10-23T04:38:06.387307+00:00",
+    "ended_utc": "2026-10-23T08:11:52.540929+00:00",
+    "state": "complete",
+    "hardware_and_packages": {
+      "name": "NVIDIA GeForce RTX 4090 D",
+      "memory_bytes": 50864390144,
+      "capability": [
+        8,
+        9
+      ],
+      "torch_cuda": "12.8",
+      "packages": {
+        "torch": "2.8.0+cu128",
+        "torchvision": "0.23.0+cu128",
+        "transformers": "4.57.1",
+        "accelerate": "1.11.0",
+        "huggingface-hub": "0.35.3",
+        "safetensors": "0.6.2",
+        "tokenizers": "0.22.1",
+        "Pillow": "11.3.0"
+      },
+      "python": "3.12.3",
+      "driver": "580.105.08"
+    },
+    "runtime": {
+      "vllm": "0.11.0",
+      "torch": "2.8.0+cu128",
+      "transformers": "4.57.1"
+    }
+  }
+}

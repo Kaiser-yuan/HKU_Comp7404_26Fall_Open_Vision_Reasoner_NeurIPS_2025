@@ -1,0 +1,26 @@
+{
+  "post_hoc_engineering_review": true,
+  "original_gate_replaced_or_marked_passed": false,
+  "common_token_bins": [
+    "Alright",
+    "First",
+    "Okay",
+    "To"
+  ],
+  "residual_bin": "all_other_tokens",
+  "method": "Coarsen each full distribution into tokens present in all three top-k lists plus all other tokens. TV of this partition is a lower bound on full-distribution TV.",
+  "same_image_total_variation": 1.6401502029033736e-05,
+  "white_image_total_variation": 0.00522730590982459,
+  "effect_to_control_ratio": 318.70897559085,
+  "pixel_influence_supported_by_review": true,
+  "limits": "Three one-token traces only. Does not demonstrate visual understanding or establish that caching caused the numerical difference. The original strict logprob gate remains failed.",
+  "original_probe_sha256": "6da56a4f413d5fa2dcd44b2386ecb7718c0aa5bc3d716fd72e6e1f340aff042e",
+  "original_strict_gate": {
+    "same_prompt_token_ids": true,
+    "same_image_control_stable": false,
+    "max_common_token_logprob_control_difference": 0.1249837875366211,
+    "max_common_token_logprob_image_difference": 0.3697700500488281,
+    "image_affects_output_distribution": false,
+    "interpretation": "A positive result supports pixel influence on serving output; not visual understanding. A negative result is inconclusive."
+  }
+}

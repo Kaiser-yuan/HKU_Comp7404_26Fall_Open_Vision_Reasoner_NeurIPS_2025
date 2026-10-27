@@ -1,0 +1,11 @@
+{
+  "status": "DRAFT",
+  "poster_pptx": "output/OVR_A0_PRE_EVALUATION_DRAFT_v3.pptx",
+  "poster_pdf": "output/OVR_A0_PRE_EVALUATION_DRAFT_v3.pdf",
+  "human_content_review": false,
+  "human_visual_review": false,
+  "offline_demo_review": false,
+  "ai_disclosure_verified": false,
+  "talk_rehearsal_completed": false,
+  "paper_result_sources_verified": false
+}

@@ -1,0 +1,7 @@
+{
+  "checked_utc": "2026-10-22T14:32:00.592537+00:00",
+  "exit_code": 0,
+  "stdout": "VLLM_NATIVE_EXTENSION_IMPORT_OK\n",
+  "stderr": "",
+  "seconds": 3.8268500827252865
+}

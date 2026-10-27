@@ -1,0 +1,64 @@
+{
+  "state": "complete",
+  "authorized_utc": "2026-10-23T01:20:08+00:00",
+  "deadline_utc": "2026-10-23T11:20:08+00:00",
+  "gpu_hourly_price_cny": 2.78,
+  "max_task_runtime_hours_from_authorization": 10,
+  "model_order": [
+    "coldstart",
+    "rl"
+  ],
+  "planned_questions_per_model": 100,
+  "no_more_diagnostics": true,
+  "instance_power_or_billing_changed": false,
+  "pid": 4750,
+  "formal_started_utc": "2026-10-23T01:31:54.365064+00:00",
+  "current_model": "rl",
+  "model_results": {
+    "coldstart": {
+      "state": "complete",
+      "completed": 100,
+      "model_server_stopped": true
+    },
+    "rl": {
+      "state": "complete",
+      "completed": 100,
+      "model_server_stopped": true
+    }
+  },
+  "coverage": {
+    "protocol_id": "ovr-vllm-shared100-checkpoint-defaults8192-v1",
+    "phase": "pilot",
+    "complete": true,
+    "scope": "100-question subset, not a full benchmark reproduction",
+    "models": {
+      "coldstart": {
+        "expected": 100,
+        "generated": 100,
+        "missing_ids": [],
+        "events": []
+      },
+      "rl": {
+        "expected": 100,
+        "generated": 100,
+        "missing_ids": [],
+        "events": []
+      }
+    },
+    "paired_n": 100,
+    "transitions": {
+      "0->0": 56,
+      "0->1": 10,
+      "1->0": 13,
+      "1->1": 21
+    }
+  },
+  "archive": {
+    "file": "/root/autodl-tmp/OVR_CLOUD_STARTER/artifacts/OVR_CLOUD_VLLM_SHARED1008192_V1_RESULTS.zip",
+    "sha256": "64e507bc52c7caffa367cee4655931d0531572d097a12c449f8e1d9a7da22786",
+    "files": 129
+  },
+  "all_model_servers_stopped": true,
+  "completed_utc": "2026-10-23T08:12:16.105869+00:00",
+  "formal_generations": 200
+}

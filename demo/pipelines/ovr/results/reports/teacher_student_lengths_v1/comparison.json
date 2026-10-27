@@ -1,0 +1,169 @@
+{
+  "complete": true,
+  "teacher_expected_n": 1000,
+  "teacher_observed_n": 1000,
+  "teacher_unique_question_n": 1000,
+  "teacher_unique_response_n": 1000,
+  "tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+  "counting": "Canonical re-tokenization of decoded text with the same Qwen tokenizer; add_special_tokens=False; reasoning excludes think delimiters and final answer. Student opening think delimiter was supplied by the official template. Observed censored lengths are lower bounds. Teacher unsegmented answers retain response length but have reasoning length=null.",
+  "groups": [
+    {
+      "group": "teacher",
+      "sample_n": 1000,
+      "response_text": {
+        "n": 1000,
+        "mean": 4941.407,
+        "median": 3067.5,
+        "min": 182,
+        "max": 26605,
+        "p25": 1365.5,
+        "p75": 6852.75
+      },
+      "reasoning_observed": {
+        "n": 1000,
+        "mean": 4444.473,
+        "median": 2522.5,
+        "min": 171,
+        "max": 25757,
+        "p25": 1068.25,
+        "p75": 6118.75
+      },
+      "reasoning_completed": {
+        "n": 1000,
+        "mean": 4444.473,
+        "median": 2522.5,
+        "min": 171,
+        "max": 25757,
+        "p25": 1068.25,
+        "p75": 6118.75
+      },
+      "capped_n": null,
+      "reasoning_right_censored_n": 0,
+      "unsegmented_n": 0
+    },
+    {
+      "group": "coldstart",
+      "sample_n": 20,
+      "response_text": {
+        "n": 20,
+        "mean": 8964.15,
+        "median": 9991.0,
+        "min": 1094,
+        "max": 15870,
+        "p25": 6300.5,
+        "p75": 12135.0
+      },
+      "reasoning_observed": {
+        "n": 20,
+        "mean": 8672.9,
+        "median": 9624.5,
+        "min": 797,
+        "max": 15506,
+        "p25": 5969.75,
+        "p75": 11703.75
+      },
+      "reasoning_completed": {
+        "n": 20,
+        "mean": 8672.9,
+        "median": 9624.5,
+        "min": 797,
+        "max": 15506,
+        "p25": 5969.75,
+        "p75": 11703.75
+      },
+      "capped_n": 0,
+      "reasoning_right_censored_n": 0,
+      "unsegmented_n": 0
+    },
+    {
+      "group": "rl",
+      "sample_n": 20,
+      "response_text": {
+        "n": 20,
+        "mean": 11214.2,
+        "median": 11787.5,
+        "min": 1381,
+        "max": 16384,
+        "p25": 9718.25,
+        "p75": 14771.25
+      },
+      "reasoning_observed": {
+        "n": 20,
+        "mean": 10968.75,
+        "median": 11508.5,
+        "min": 984,
+        "max": 16384,
+        "p25": 9609.0,
+        "p75": 14439.75
+      },
+      "reasoning_completed": {
+        "n": 16,
+        "mean": 9614.9375,
+        "median": 11250.5,
+        "min": 984,
+        "max": 14925,
+        "p25": 7264.0,
+        "p75": 11711.5
+      },
+      "capped_n": 4,
+      "reasoning_right_censored_n": 4,
+      "unsegmented_n": 0
+    }
+  ],
+  "paired_completed": {
+    "both_completed_n": 16,
+    "question_ids": [
+      "246",
+      "598",
+      "667",
+      "783",
+      "936",
+      "1052",
+      "1080",
+      "1296",
+      "1527",
+      "1618",
+      "2529",
+      "2536",
+      "2632",
+      "2760",
+      "2911",
+      "3034"
+    ],
+    "coldstart_reasoning": {
+      "n": 16,
+      "mean": 8010.8125,
+      "median": 8658.5,
+      "min": 797,
+      "max": 15506,
+      "p25": 5178.25,
+      "p75": 10633.5
+    },
+    "rl_reasoning": {
+      "n": 16,
+      "mean": 9614.9375,
+      "median": 11250.5,
+      "min": 984,
+      "max": 14925,
+      "p25": 7264.0,
+      "p75": 11711.5
+    },
+    "paired_reasoning_delta_rl_minus_coldstart": {
+      "n": 16,
+      "mean": 1604.125,
+      "median": 1573.0,
+      "min": -6023,
+      "max": 7469,
+      "p25": 559.0,
+      "p75": 4073.25
+    },
+    "limitation": "Completion-selected subset; excludes four RL-censored questions, not an unbiased replacement for all 20."
+  },
+  "scope": "Descriptive cross-task comparison; not a paired teacher-student capability evaluation and not full original training mixture",
+  "teacher_training_coverage": "Published revision only; not assumed identical to all original training examples; task and modality differ from MathVision.",
+  "limitations": [
+    "Longer text is not evidence of stronger reasoning, behavior transfer or actual visual attention.",
+    "Teacher end-of-generation status is unavailable; absence of a length finish reason does not establish uncensored teacher generation.",
+    "No resampling, new generation, training, GPU, or paid model judge."
+  ]
+}

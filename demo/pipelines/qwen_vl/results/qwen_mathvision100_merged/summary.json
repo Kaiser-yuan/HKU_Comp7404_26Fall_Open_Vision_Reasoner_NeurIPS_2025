@@ -1,0 +1,10 @@
+{
+  "total": 100,
+  "successful": 100,
+  "errors": 0,
+  "conservative_matches": 26,
+  "truncated": 2,
+  "extraction_failures": 4,
+  "warning": "Merged disjoint pilot runs; not official scoring.",
+  "conservative_accuracy": 0.26
+}

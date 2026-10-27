@@ -1,0 +1,91 @@
+{
+  "checked_utc": "2026-10-22T14:46:23.740423+00:00",
+  "diagnostic_only": true,
+  "formal_pilot_started": false,
+  "summary": [
+    {
+      "file": "coldstart_defaults_official.jsonl",
+      "n": 2,
+      "normal_stop": 2,
+      "truncated": 0,
+      "correct": 2,
+      "raw_sha256": "ab048eb36ccb9e4f64a40ec1bcc189e50653a17da018329924ef2082b128a215",
+      "rows": [
+        {
+          "model": "coldstart",
+          "question_id": "40",
+          "condition": "defaults",
+          "output_tokens": 2569,
+          "finish_reason": "stop",
+          "correct": true,
+          "prompt_ids_match_tf": true
+        },
+        {
+          "model": "coldstart",
+          "question_id": "51",
+          "condition": "defaults",
+          "output_tokens": 1089,
+          "finish_reason": "stop",
+          "correct": true,
+          "prompt_ids_match_tf": true
+        }
+      ]
+    },
+    {
+      "file": "rl_defaults_official.jsonl",
+      "n": 2,
+      "normal_stop": 1,
+      "truncated": 1,
+      "correct": 1,
+      "raw_sha256": "74282d7e026bbd4cf3371dc12c131c1af030b1930886b74e5071e8064989adfb",
+      "rows": [
+        {
+          "model": "rl",
+          "question_id": "40",
+          "condition": "defaults",
+          "output_tokens": 3667,
+          "finish_reason": "stop",
+          "correct": true,
+          "prompt_ids_match_tf": true
+        },
+        {
+          "model": "rl",
+          "question_id": "51",
+          "condition": "defaults",
+          "output_tokens": 4096,
+          "finish_reason": "length",
+          "correct": false,
+          "prompt_ids_match_tf": true
+        }
+      ]
+    },
+    {
+      "file": "rl_greedy_official.jsonl",
+      "n": 2,
+      "normal_stop": 0,
+      "truncated": 2,
+      "correct": 0,
+      "raw_sha256": "06e551c342effd0082bd75ee669434e49b8ead7c0c5066f6c0bd7641475c528f",
+      "rows": [
+        {
+          "model": "rl",
+          "question_id": "40",
+          "condition": "greedy",
+          "output_tokens": 4096,
+          "finish_reason": "length",
+          "correct": false,
+          "prompt_ids_match_tf": true
+        },
+        {
+          "model": "rl",
+          "question_id": "51",
+          "condition": "greedy",
+          "output_tokens": 4096,
+          "finish_reason": "length",
+          "correct": false,
+          "prompt_ids_match_tf": true
+        }
+      ]
+    }
+  ]
+}

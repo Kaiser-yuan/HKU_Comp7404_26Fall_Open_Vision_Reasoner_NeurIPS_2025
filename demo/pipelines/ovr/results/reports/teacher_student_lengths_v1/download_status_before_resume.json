@@ -1,0 +1,25 @@
+{
+  "teacher_status": "NOT_ACQUIRED_NETWORK_BLOCKED",
+  "teacher_observed_n": 0,
+  "teacher_expected_n": 1000,
+  "attempts": [
+    {
+      "method": "HTTP stream",
+      "result": "ConnectionError ReadTimeout at us.aws.cdn.hf.co; 4194304 bytes saved, not verified",
+      "automatic_retry": false
+    },
+    {
+      "method": "hf-mirror.com range probe",
+      "result": "1MiB took 20.19 seconds; not a viable full-corpus transfer"
+    },
+    {
+      "method": "official HF Xet client token=False",
+      "result": "ConnectionError from public us.aws.cdn.hf.co",
+      "automatic_retry": false
+    }
+  ],
+  "contains_secrets": false,
+  "signed_urls_redacted": true,
+  "sampling_protocol_unchanged": true,
+  "no_gpu_or_paid_api": true
+}

@@ -1,0 +1,27 @@
+{
+  "protocol_id": "ovr-vllm-shared100-checkpoint-defaults8192-v1",
+  "phase": "pilot",
+  "complete": true,
+  "scope": "100-question subset, not a full benchmark reproduction",
+  "models": {
+    "coldstart": {
+      "expected": 100,
+      "generated": 100,
+      "missing_ids": [],
+      "events": []
+    },
+    "rl": {
+      "expected": 100,
+      "generated": 100,
+      "missing_ids": [],
+      "events": []
+    }
+  },
+  "paired_n": 100,
+  "transitions": {
+    "0->0": 56,
+    "0->1": 10,
+    "1->0": 13,
+    "1->1": 21
+  }
+}

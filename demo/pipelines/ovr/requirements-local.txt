@@ -1,0 +1,7 @@
+pyarrow==21.0.0
+Pillow==11.3.0
+numpy==2.2.6
+tqdm==4.67.1
+fire==0.7.1
+latex2sympy2==1.9.1
+sympy==1.13.3

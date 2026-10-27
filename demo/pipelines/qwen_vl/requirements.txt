@@ -1,0 +1,7 @@
+# PyTorch 2.8.0+cu128 is provided by the tested AutoDL image.
+# Do not replace it without checking GPU compatibility.
+transformers==4.57.1
+huggingface_hub[cli]==0.36.0
+accelerate==1.15.0
+pillow==11.3.0
+# Resolved cloud packages are recorded in logs/requirements.txt.

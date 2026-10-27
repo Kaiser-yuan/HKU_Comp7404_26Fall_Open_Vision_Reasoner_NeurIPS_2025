@@ -1,0 +1,10 @@
+{
+  "total": 20,
+  "successful": 20,
+  "errors": 0,
+  "conservative_matches": 4,
+  "conservative_accuracy": 0.2,
+  "truncated": 2,
+  "extraction_failures": 3,
+  "warning": "Pilot only. All mismatches need review; not official scoring or a full benchmark result."
+}

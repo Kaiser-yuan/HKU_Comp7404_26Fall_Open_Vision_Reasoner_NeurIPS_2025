@@ -1,0 +1,101 @@
+﻿id,subject,level,expected_answer,predicted_answer,conservative_match,status,truncated,needs_manual_review,generated_tokens,inference_seconds
+40,combinatorial geometry,1,D,D,True,ok,False,False,209,3.9478421304374933
+51,topology,5,3,,False,ok,False,True,2,0.10249560885131359
+72,counting,1,D,C,False,ok,False,False,374,5.8536824975162745
+154,combinatorial geometry,1,A,C,False,ok,False,False,302,4.799407501704991
+215,metric geometry - length,5,E,C,False,ok,False,False,586,8.679192018695176
+246,algebra,5,5,3,False,ok,False,False,370,5.520396689884365
+272,graph theory,5,3,,False,ok,False,True,2,0.10479834862053394
+302,algebra,5,E,E,True,ok,False,False,512,7.545417088083923
+334,logic,1,3,3,True,ok,False,False,496,7.29599419888109
+336,statistics,3,D,D,True,ok,False,False,321,4.736558855511248
+457,descriptive geometry,5,D,B,False,ok,False,False,413,6.255635806359351
+465,arithmetic,3,6,15,False,ok,False,False,298,4.472810549661517
+507,graph theory,2,5,6,False,ok,False,False,1563,22.963505043648183
+523,algebra,2,26,21,False,ok,False,False,433,6.475874214433134
+598,transformation geometry,1,B,C,False,ok,False,False,486,7.444584008306265
+601,combinatorics,3,5,3,False,ok,False,False,8,0.18806681409478188
+612,algebra,2,A,C,False,ok,False,False,495,7.311063438653946
+633,algebra,2,76,76,True,ok,False,False,334,5.0261466689407825
+663,arithmetic,3,12,9,False,ok,False,False,414,6.205736202187836
+667,algebra,2,C,A,False,ok,False,False,707,10.618247260339558
+674,solid geometry,5,E,E,True,ok,False,False,329,4.948292038403451
+689,analytic geometry,1,D,C,False,ok,False,False,358,5.308720885775983
+703,algebra,2,22,22,True,ok,False,False,424,6.238928262144327
+783,descriptive geometry,5,B,C,False,ok,False,False,301,4.616515415720642
+836,combinatorial geometry,2,B,C,False,ok,False,False,394,5.961495326831937
+872,combinatorial geometry,2,B,B,True,ok,False,False,210,3.1261929161846638
+879,descriptive geometry,5,C,C,True,ok,False,False,406,5.994998816400766
+903,combinatorial geometry,2,D,A,False,ok,False,False,274,4.329730061814189
+927,solid geometry,5,E,B,False,ok,False,False,276,4.295304875820875
+936,transformation geometry,1,C,A,False,ok,False,False,592,8.742120111361146
+1000,transformation geometry,3,A,D,False,ok,False,False,292,4.317440701648593
+1005,combinatorial geometry,4,2,4,False,ok,False,False,811,11.889164431020617
+1052,metric geometry - area,3,A,C,False,ok,False,False,429,6.316293464973569
+1080,transformation geometry,3,37,5,False,ok,False,False,919,13.648873237892985
+1118,combinatorial geometry,4,5,8,False,ok,False,False,479,7.099515907466412
+1165,metric geometry - length,2,D,B,False,ok,False,False,633,9.341975207440555
+1187,logic,4,16,26,False,ok,False,False,601,8.872856142930686
+1213,arithmetic,5,2.5,2.5,True,ok,False,False,411,6.097254743799567
+1248,metric geometry - length,2,18,10,False,ok,False,False,555,8.214521169662476
+1274,metric geometry - area,4,5,8,False,ok,False,False,426,6.303381976671517
+1296,metric geometry - length,4,E,E,True,ok,False,False,466,6.894210485741496
+1301,combinatorics,4,4,6,False,ok,False,False,371,5.441221824847162
+1324,metric geometry - area,4,B,B,True,ok,False,False,372,5.46774916537106
+1370,analytic geometry,5,D,C,False,ok,False,False,344,5.350601923651993
+1392,algebra,3,D,C,False,ok,False,False,455,6.672064950689673
+1401,solid geometry,2,C,C,True,ok,False,False,362,5.330808410421014
+1414,topology,2,5,4,False,ok,False,False,203,3.0578216006979346
+1510,combinatorial geometry,4,B,E,False,ok,False,False,414,6.08930825162679
+1527,metric geometry - angle,5,132,36,False,ok,False,False,436,6.391275430098176
+1533,solid geometry,4,C,D,False,ok,False,False,287,4.50011629704386
+1542,combinatorial geometry,4,3,1,False,ok,False,False,452,6.6365438234061
+1552,combinatorial geometry,4,4,5,False,ok,False,False,378,5.548521518707275
+1570,metric geometry - length,2,E,E,True,ok,False,False,294,4.369059856981039
+1618,descriptive geometry,4,E,E,True,ok,False,False,216,3.4082931810989976
+1684,logic,4,3,2,False,ok,False,False,769,11.470740533433855
+1710,combinatorics,2,6,1,False,ok,False,False,330,4.913683763705194
+1748,combinatorial geometry,2,E,C,False,ok,False,False,392,5.842048258520663
+1770,algebra,2,21,42,False,ok,False,False,778,11.46477429755032
+1782,combinatorial geometry,2,20,5\pi/2,False,ok,False,False,768,11.323127882555127
+1787,logic,2,D,D,True,ok,False,False,480,7.210771198384464
+1858,transformation geometry,4,D,B,False,ok,False,False,296,4.600846691988409
+1904,metric geometry - area,4,B,B,True,ok,False,False,643,9.530600701458752
+1916,combinatorics,4,5,3,False,ok,False,False,579,8.503906295634806
+1951,metric geometry - angle,2,E,C,False,ok,False,False,486,7.209532495588064
+1974,combinatorial geometry,3,E,B,False,ok,False,False,403,5.9263638174161315
+1981,analytic geometry,5,E,C,False,ok,False,False,309,4.671349114738405
+2016,metric geometry - area,5,128,128,True,ok,False,False,471,7.012462637387216
+2073,metric geometry - length,5,871,54,False,ok,False,False,477,7.034518273547292
+2082,metric geometry - length,5,790,790,True,ok,False,False,459,6.926240785047412
+2104,combinatorics,5,608,0,False,ok,False,False,674,9.912472904659808
+2149,metric geometry - length,4,C,A,False,ok,False,False,800,11.781361765228212
+2164,metric geometry - length,4,C,A,False,ok,False,False,616,9.104060198180377
+2176,metric geometry - area,4,B,B,True,ok,False,False,646,9.700300551950932
+2220,solid geometry,2,E,B,False,ok,False,False,653,9.75995872169733
+2221,solid geometry,2,A,A,True,ok,False,False,518,7.781605894677341
+2238,solid geometry,2,E,B,False,ok,False,False,1224,18.371514223515987
+2267,metric geometry - angle,4,E,E,True,ok,False,False,843,12.389374100603163
+2271,metric geometry - area,5,E,E,True,ok,False,False,858,12.552998905070126
+2336,metric geometry - length,5,C,B,False,ok,False,False,735,10.787999108433723
+2381,metric geometry - angle,4,C,D,False,ok,False,False,734,10.741134711541235
+2392,metric geometry - area,5,B,C,False,ok,False,False,758,11.200941789895296
+2423,metric geometry - area,5,B,C,False,ok,False,False,612,8.949501215480268
+2450,analytic geometry,4,B,A,False,ok,False,False,577,8.62041378300637
+2529,transformation geometry,3,B,B,True,ok,False,False,310,4.7363373981788754
+2536,combinatorics,2,1047,1047,True,ok,False,False,272,4.005243041552603
+2557,statistics,2,B,B,True,ok,False,False,301,4.463374553248286
+2632,transformation geometry,3,5,4,False,ok,False,False,303,4.492789681069553
+2713,statistics,2,6,6,True,ok,False,False,470,7.068535755388439
+2716,metric geometry - area,3,750,450,False,ok,False,False,699,10.304326844401658
+2725,combinatorial geometry,4,C,E,False,ok,False,False,597,8.986767452210188
+2760,solid geometry,4,A,E,False,ok,False,False,397,5.930745298974216
+2816,combinatorial geometry,5,72,90,False,ok,False,False,646,9.551122835837305
+2831,metric geometry - area,5,7,7,True,ok,False,False,599,8.927085036411881
+2911,metric geometry - area,1,384,150,False,ok,False,False,767,11.574118863791227
+2918,metric geometry - angle,2,72,72,True,ok,False,False,939,14.129919859580696
+2926,metric geometry - area,1,\frac{1}{2},\frac{1}{2},True,ok,False,False,454,7.048349401913583
+2950,analytic geometry,5,8,9,False,ok,False,False,1126,16.877145047299564
+2968,solid geometry,2,\sqrt{34},\sqrt{41},False,ok,False,False,309,4.795378386974335
+2992,metric geometry - area,4,900\pi,544\pi,False,ok,False,False,700,10.543632479384542
+3034,metric geometry - angle,2,70,35,False,ok,False,False,448,6.819981435313821

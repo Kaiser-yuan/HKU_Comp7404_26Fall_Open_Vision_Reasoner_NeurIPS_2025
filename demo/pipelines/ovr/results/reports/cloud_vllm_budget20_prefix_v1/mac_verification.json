@@ -1,0 +1,72 @@
+{
+  "status": "COMPLETE_VERIFIED_ON_MAC",
+  "verified_utc": "2026-10-26T03:35:11.993062+00:00",
+  "real_generations": 40,
+  "official_scored_views": 80,
+  "models": {
+    "coldstart": {
+      "unique_questions": 20,
+      "submitted": 20,
+      "saved": 20,
+      "uncertain_submissions": 0,
+      "raw_sha256": "35cb97edaca83f14d89d2add701ca7800e24b0cc2782dda95e93fec91437878c",
+      "output_tokens": 179283
+    },
+    "rl": {
+      "unique_questions": 20,
+      "submitted": 20,
+      "saved": 20,
+      "uncertain_submissions": 0,
+      "raw_sha256": "581ff26a75746084a5c781b906ba0d126951043343c834e6deb6c861cb097878",
+      "output_tokens": 224284
+    }
+  },
+  "archive_sha256": "a9eddca6954d8beb585a8a92b6bc66bc39ef1a28f8569f32309317c7b033260c",
+  "archive_members_verified": 99,
+  "mac_recomputed_results_identical_to_cloud": true,
+  "post_download_result_members_sha_verified": 67,
+  "raw_unchanged_during_scoring": true,
+  "original100_raw_and_scored_unchanged": {
+    "results/raw/cloud_vllm_shared1008192_v1/pilot/coldstart.jsonl": "456467dc37b2d15cdd7785668cadbdaa44046759aedce0a1b8f1dbc32a8f09e1",
+    "results/raw/cloud_vllm_shared1008192_v1/pilot/rl.jsonl": "13a6082b24841c9fec523c73408adb0d8192058781241af61520195e7e05e045",
+    "results/scored/cloud_vllm_shared1008192_v1/pilot/coldstart.jsonl": "faf8f3f5d0907b9523ac7173b4a3bac79a253f18bc1db37ef14c9dd74cc6abb3",
+    "results/scored/cloud_vllm_shared1008192_v1/pilot/rl.jsonl": "9cdef2e2f4897f5a6f02bcf9c478e1412d9ed4f17b68efe757d1904dc9ef2bd6"
+  },
+  "controller": {
+    "state": "generation_complete_pending_cpu_scoring",
+    "started_utc": "2026-10-26T01:16:31.864790+00:00",
+    "minutes_limit": 180.0,
+    "run_fingerprint": "37fbd6443419566fe02ed67b2fed8277c015e2d82e9fb3b67a2d45fcbaba5229",
+    "instance_power_or_billing_changed": false,
+    "servers_stopped": true,
+    "planned_generations": 40,
+    "hardware": {
+      "versions": {
+        "vllm": "0.11.0",
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.1"
+      },
+      "gpu": "NVIDIA GeForce RTX 4090 D",
+      "vram_bytes": 50864390144,
+      "cuda": "12.8"
+    },
+    "current_model": "rl",
+    "completed": {
+      "coldstart": 20,
+      "rl": 20
+    },
+    "ended_utc": "2026-10-26T03:19:45.209562+00:00",
+    "task_runtime_s": 7393.344288486987,
+    "gpu_compute_pids_after": [],
+    "gpu_compute_idle_after": true
+  },
+  "gpu_idle_readback_beijing": "2026-10-26 11:27",
+  "instance_power_changed_by_agent": false,
+  "method": "One 16k trajectory per model and question; 8k decoded token prefix, not independent generation",
+  "selection": "20 exploratory questions from previously evaluated 100; four per difficulty; no claim of held-out or full benchmark performance",
+  "official_scorer_source_sha256": {
+    "vendor/mathvision/evaluate.py": "499b9665932e35e0ac6fe6c423f440b7227a1cffde07f3b7310fe98d53c7e36a",
+    "vendor/mathvision/utils.py": "9735268802010d3b5c5fb26b6b39d6684a342e85daf4daa4c20ecbbe6079753d"
+  },
+  "temporary_ssh_password_and_askpass_deleted": true
+}

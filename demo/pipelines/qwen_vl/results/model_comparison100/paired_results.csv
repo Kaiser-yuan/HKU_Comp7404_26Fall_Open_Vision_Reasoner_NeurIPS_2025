@@ -1,0 +1,101 @@
+﻿id,subject,level,reference_answer,qwen_answer,vl_answer,qwen_mapped_option,vl_mapped_option,qwen_answer_match,vl_answer_match,category,qwen_tokens,vl_tokens,qwen_seconds,vl_seconds,qwen_truncated,vl_truncated
+40,combinatorial geometry,1,D,D,D,D,D,True,True,both_correct,268,209,4.891938989982009,3.9478421304374933,False,False
+51,topology,5,3,10,3,,,False,True,vl_improved,3,2,0.7962275696918368,0.10249560885131359,False,False
+72,counting,1,D,E,C,E,C,False,False,both_incorrect,366,374,5.7385114235803485,5.8536824975162745,False,False
+154,combinatorial geometry,1,A,C,C,C,C,False,False,both_incorrect,351,302,5.515489128418267,4.799407501704991,False,False
+215,metric geometry - length,5,E,A,C,,,False,False,both_incorrect,1089,586,16.0372448945418,8.679192018695176,False,False
+246,algebra,5,5,5,3,,,True,False,vl_regressed,415,370,6.115539202466607,5.520396689884365,False,False
+272,graph theory,5,3,4,3,,,False,True,vl_improved,245,2,3.6309186527505517,0.10479834862053394,False,False
+302,algebra,5,E,E,E,,,True,True,both_correct,520,512,7.727250635623932,7.545417088083923,False,False
+334,logic,1,3,5,3,,,False,True,vl_improved,595,496,8.732239846140146,7.29599419888109,False,False
+336,statistics,3,D,D,D,,,True,True,both_correct,554,321,8.146703311242163,4.736558855511248,False,False
+457,descriptive geometry,5,D,C,B,,,False,False,both_incorrect,305,413,4.689326732419431,6.255635806359351,False,False
+465,arithmetic,3,6,6,15,,,True,False,vl_regressed,286,298,4.274202182888985,4.472810549661517,False,False
+507,graph theory,2,5,7,6,,,False,False,both_incorrect,325,1563,4.802568695507944,22.963505043648183,False,False
+523,algebra,2,26,28,21,,,False,False,both_incorrect,284,433,4.240311570465565,6.475874214433134,False,False
+598,transformation geometry,1,B,C,C,C,C,False,False,both_incorrect,183,486,2.975593388080597,7.444584008306265,False,False
+601,combinatorics,3,5,3,3,,,False,False,both_incorrect,2,8,0.09944570530205965,0.18806681409478188,False,False
+612,algebra,2,A,E,C,,,False,False,both_incorrect,328,495,4.8836684646084905,7.311063438653946,False,False
+633,algebra,2,76,76,76,,,True,True,both_correct,364,334,5.423292156308889,5.0261466689407825,False,False
+663,arithmetic,3,12,6,9,,,False,False,both_incorrect,350,414,5.1471431367099285,6.205736202187836,False,False
+667,algebra,2,C,C,A,,,True,False,vl_regressed,454,707,6.7090595150366426,10.618247260339558,False,False
+674,solid geometry,5,E,C,E,,,False,True,vl_improved,480,329,7.110246225260198,4.948292038403451,False,False
+689,analytic geometry,1,D,D,C,,,True,False,vl_regressed,312,358,4.625120374374092,5.308720885775983,False,False
+703,algebra,2,22,14,22,,,False,True,vl_improved,350,424,5.179584085941315,6.238928262144327,False,False
+783,descriptive geometry,5,B,E,C,,,False,False,both_incorrect,413,301,6.2538699600845575,4.616515415720642,False,False
+836,combinatorial geometry,2,B,C,C,C,C,False,False,both_incorrect,511,394,7.679548332467675,5.961495326831937,False,False
+872,combinatorial geometry,2,B,\text{C},B,,,False,True,vl_improved,158,210,2.38644983060658,3.1261929161846638,False,False
+879,descriptive geometry,5,C,D,C,,,False,True,vl_improved,358,406,5.300370184704661,5.994998816400766,False,False
+903,combinatorial geometry,2,D,D,A,D,A,True,False,vl_regressed,197,274,3.163916042074561,4.329730061814189,False,False
+927,solid geometry,5,E,D,B,,,False,False,both_incorrect,243,276,3.8622929314151406,4.295304875820875,False,False
+936,transformation geometry,1,C,A,A,,,False,False,both_incorrect,627,592,9.277281922288239,8.742120111361146,False,False
+1000,transformation geometry,3,A,E,D,E,D,False,False,both_incorrect,247,292,3.6825566170737147,4.317440701648593,False,False
+1005,combinatorial geometry,4,2,4,4,,,False,False,both_incorrect,496,811,7.282687457278371,11.889164431020617,False,False
+1052,metric geometry - area,3,A,A,C,,,True,False,vl_regressed,237,429,3.5089953327551484,6.316293464973569,False,False
+1080,transformation geometry,3,37,12,5,,,False,False,both_incorrect,581,919,8.58844484295696,13.648873237892985,False,False
+1118,combinatorial geometry,4,5,8,8,,,False,False,both_incorrect,536,479,7.848578043282032,7.099515907466412,False,False
+1165,metric geometry - length,2,D,C,B,,,False,False,both_incorrect,943,633,13.826351778581738,9.341975207440555,False,False
+1187,logic,4,16,4,26,,,False,False,both_incorrect,335,601,4.940677644684911,8.872856142930686,False,False
+1213,arithmetic,5,2.5,2.4,2.5,,,False,True,vl_improved,505,411,7.446304730139673,6.097254743799567,False,False
+1248,metric geometry - length,2,18,4,10,,,False,False,both_incorrect,401,555,5.8930364940315485,8.214521169662476,False,False
+1274,metric geometry - area,4,5,3,8,,,False,False,both_incorrect,472,426,6.964640176855028,6.303381976671517,False,False
+1296,metric geometry - length,4,E,E,E,,,True,True,both_correct,813,466,11.922103659249842,6.894210485741496,False,False
+1301,combinatorics,4,4,20,6,,,False,False,both_incorrect,380,371,5.592628393322229,5.441221824847162,False,False
+1324,metric geometry - area,4,B,80-2\pi,B,B,,True,True,both_correct,440,372,6.442847039550543,5.46774916537106,False,False
+1370,analytic geometry,5,D,E,C,E,C,False,False,both_incorrect,274,344,4.3036168944090605,5.350601923651993,False,False
+1392,algebra,3,D,E,C,,,False,False,both_incorrect,497,455,7.337327932938933,6.672064950689673,False,False
+1401,solid geometry,2,C,C,C,,,True,True,both_correct,313,362,4.659247308969498,5.330808410421014,False,False
+1414,topology,2,5,5,4,,,True,False,vl_regressed,206,203,3.060473995283246,3.0578216006979346,False,False
+1510,combinatorial geometry,4,B,90,E,,,False,False,both_incorrect,252,414,3.756436163559556,6.08930825162679,False,False
+1527,metric geometry - angle,5,132,6,36,,,False,False,both_incorrect,388,436,5.746916873380542,6.391275430098176,False,False
+1533,solid geometry,4,C,D,D,D,D,False,False,both_incorrect,265,287,4.19437460321933,4.50011629704386,False,False
+1542,combinatorial geometry,4,3,,1,,,False,False,both_incorrect,4096,452,60.39227511640638,6.6365438234061,True,False
+1552,combinatorial geometry,4,4,14,5,,,False,False,both_incorrect,405,378,5.970472309738398,5.548521518707275,False,False
+1570,metric geometry - length,2,E,A,E,,,False,True,vl_improved,295,294,4.410186469554901,4.369059856981039,False,False
+1618,descriptive geometry,4,E,E,E,E,E,True,True,both_correct,413,216,6.35341174621135,3.4082931810989976,False,False
+1684,logic,4,3,2,2,,,False,False,both_incorrect,718,769,10.755242151208222,11.470740533433855,False,False
+1710,combinatorics,2,6,1,1,,,False,False,both_incorrect,669,330,9.857612047344446,4.913683763705194,False,False
+1748,combinatorial geometry,2,E,E,C,,,True,False,vl_regressed,518,392,7.704244517721236,5.842048258520663,False,False
+1770,algebra,2,21,28,42,,,False,False,both_incorrect,432,778,6.407866798341274,11.46477429755032,False,False
+1782,combinatorial geometry,2,20,0,5\pi/2,,,False,False,both_incorrect,824,768,12.04679657611996,11.323127882555127,False,False
+1787,logic,2,D,A,D,A,D,False,True,vl_improved,1307,480,19.30223159864545,7.210771198384464,False,False
+1858,transformation geometry,4,D,A,B,A,B,False,False,both_incorrect,524,296,7.891421930864453,4.600846691988409,False,False
+1904,metric geometry - area,4,B,D,B,,,False,True,vl_improved,995,643,14.574818386696279,9.530600701458752,False,False
+1916,combinatorics,4,5,3,3,,,False,False,both_incorrect,467,579,6.885513317771256,8.503906295634806,False,False
+1951,metric geometry - angle,2,E,B,C,,,False,False,both_incorrect,309,486,4.563343241810799,7.209532495588064,False,False
+1974,combinatorial geometry,3,E,B,B,,,False,False,both_incorrect,430,403,6.290639754384756,5.9263638174161315,False,False
+1981,analytic geometry,5,E,B,C,B,C,False,False,both_incorrect,357,309,5.395101121626794,4.671349114738405,False,False
+2016,metric geometry - area,5,128,1536,128,,,False,True,vl_improved,1003,471,14.74056529160589,7.012462637387216,False,False
+2073,metric geometry - length,5,871,125,54,,,False,False,both_incorrect,592,477,8.682184601202607,7.034518273547292,False,False
+2082,metric geometry - length,5,790,20\sqrt{89} + 400,790,,,False,True,vl_improved,604,459,8.948271189816296,6.926240785047412,False,False
+2104,combinatorics,5,608,0,0,,,False,False,both_incorrect,490,674,7.238489471375942,9.912472904659808,False,False
+2149,metric geometry - length,4,C,C,A,,,True,False,vl_regressed,742,800,10.962732127867639,11.781361765228212,False,False
+2164,metric geometry - length,4,C,A,A,,,False,False,both_incorrect,997,616,14.677675587125123,9.104060198180377,False,False
+2176,metric geometry - area,4,B,B,B,,,True,True,both_correct,604,646,8.929169693030417,9.700300551950932,False,False
+2220,solid geometry,2,E,B,B,,,False,False,both_incorrect,651,653,9.744108975864947,9.75995872169733,False,False
+2221,solid geometry,2,A,A,A,,,True,True,both_correct,491,518,7.337057731114328,7.781605894677341,False,False
+2238,solid geometry,2,E,E,B,,,True,False,vl_regressed,797,1224,12.000110818073153,18.371514223515987,False,False
+2267,metric geometry - angle,4,E,E,E,,,True,True,both_correct,999,843,14.690196940675378,12.389374100603163,False,False
+2271,metric geometry - area,5,E,B,E,,,False,True,vl_improved,826,858,12.116146738640964,12.552998905070126,False,False
+2336,metric geometry - length,5,C,,B,,,False,False,both_incorrect,4096,735,60.409915233030915,10.787999108433723,True,False
+2381,metric geometry - angle,4,C,A,D,,,False,False,both_incorrect,647,734,9.485692544840276,10.741134711541235,False,False
+2392,metric geometry - area,5,B,D,C,,,False,False,both_incorrect,572,758,8.461052587255836,11.200941789895296,False,False
+2423,metric geometry - area,5,B,C,C,,,False,False,both_incorrect,1019,612,14.935175721533597,8.949501215480268,False,False
+2450,analytic geometry,4,B,A,A,A,A,False,False,both_incorrect,382,577,5.786498292349279,8.62041378300637,False,False
+2529,transformation geometry,3,B,B,B,B,B,True,True,both_correct,241,310,3.780851824209094,4.7363373981788754,False,False
+2536,combinatorics,2,1047,1047,1047,,,True,True,both_correct,429,272,6.29812247864902,4.005243041552603,False,False
+2557,statistics,2,B,B,B,,,True,True,both_correct,217,301,3.244644002057612,4.463374553248286,False,False
+2632,transformation geometry,3,5,2,4,,,False,False,both_incorrect,428,303,6.350450160913169,4.492789681069553,False,False
+2713,statistics,2,6,6,6,,,True,True,both_correct,404,470,6.163528217002749,7.068535755388439,False,False
+2716,metric geometry - area,3,750,666,450,,,False,False,both_incorrect,609,699,8.91649757605046,10.304326844401658,False,False
+2725,combinatorial geometry,4,C,\frac{1}{3},E,C,,True,False,vl_regressed,567,597,8.430132479406893,8.986767452210188,False,False
+2760,solid geometry,4,A,\text{A},E,,,True,False,vl_regressed,425,397,6.303078944794834,5.930745298974216,False,False
+2816,combinatorial geometry,5,72,108,90,,,False,False,both_incorrect,363,646,5.3741236086934805,9.551122835837305,False,False
+2831,metric geometry - area,5,7,4,7,,,False,True,vl_improved,893,599,13.169999501667917,8.927085036411881,False,False
+2911,metric geometry - area,1,384,336,150,,,False,False,both_incorrect,977,767,14.74746615625918,11.574118863791227,False,False
+2918,metric geometry - angle,2,72,108,72,,,False,True,vl_improved,603,939,9.14849266037345,14.129919859580696,False,False
+2926,metric geometry - area,1,\frac{1}{2},\frac{1}{2},\frac{1}{2},,,True,True,both_correct,568,454,8.63671450689435,7.048349401913583,False,False
+2950,analytic geometry,5,8,12,9,,,False,False,both_incorrect,578,1126,8.770283839665353,16.877145047299564,False,False
+2968,solid geometry,2,\sqrt{34},4,\sqrt{41},,,False,False,both_incorrect,960,309,14.37459747493267,4.795378386974335,False,False
+2992,metric geometry - area,4,900\pi,1160\pi,544\pi,,,False,False,both_incorrect,761,700,11.516151760704815,10.543632479384542,False,False
+3034,metric geometry - angle,2,70,145,35,,,False,False,both_incorrect,523,448,7.973693518899381,6.819981435313821,False,False

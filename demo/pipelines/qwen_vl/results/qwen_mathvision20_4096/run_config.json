@@ -1,0 +1,14 @@
+{
+  "model_path": "/root/autodl-tmp/ovr/models/qwen",
+  "dataset_sha256": "48a077984b161e773da7cbab91abb48ee6a1362895ba12cd266dfcc921df4eca",
+  "max_new_tokens": 4096,
+  "max_pixels": 1003520,
+  "min_pixels": 200704,
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "do_sample": false,
+  "prompt_version": "boxed-options-v1",
+  "torch": "2.8.0+cu128",
+  "transformers": "4.57.1",
+  "scoring": "conservative exact/rational match, NOT official MathVision evaluator"
+}

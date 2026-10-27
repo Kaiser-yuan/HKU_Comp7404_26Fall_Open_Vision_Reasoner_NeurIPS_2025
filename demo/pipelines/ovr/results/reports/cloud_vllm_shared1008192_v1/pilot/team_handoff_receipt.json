@@ -1,0 +1,10 @@
+{
+  "status": "VERIFIED",
+  "file": "artifacts/OVR_100题结果交接_20261023.zip",
+  "sha256": "b544d18713516ecfcb89695262ddd773446364c2a5abba19fd7d5cd15a76251a",
+  "bytes": 10346533,
+  "member_sha_verified": 14,
+  "contains_immutable_original_archive": true,
+  "offline_cases": 6,
+  "raw_or_scores_modified": false
+}

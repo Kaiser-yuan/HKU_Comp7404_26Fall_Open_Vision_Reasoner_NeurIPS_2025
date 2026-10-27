@@ -1,0 +1,6 @@
+{
+  "questions": 100,
+  "same_order_images_prompts_labels": true,
+  "qwen_split20_plus80_disjoint": true,
+  "no_new_generation": true
+}

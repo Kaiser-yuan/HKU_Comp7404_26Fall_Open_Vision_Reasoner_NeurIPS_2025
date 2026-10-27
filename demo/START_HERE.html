@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Offline reproduction of saved OVR visual-reasoning experiments. Original100, budget20 and length analyses remain separate.">
+<title>OVR Reproduction Demo</title>
+<style>
+:root{--ink:#183537;--muted:#5a6d6b;--green:#147569;--line:#d7dfd9;--paper:#f6f7f2;--white:#fff;--gold:#9a6230}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main,header,footer{max-width:1160px;margin:auto;padding:30px 40px}header{padding-top:48px;padding-bottom:22px}.eyebrow{font:600 12px/1.5 ui-monospace,monospace;text-transform:uppercase;letter-spacing:.12em;color:var(--green)}h1{font-size:clamp(34px,5vw,58px);line-height:1.08;letter-spacing:-.045em;margin:17px 0}h2{font-size:27px;line-height:1.25;letter-spacing:-.025em;margin:8px 0 18px}h3{font-size:18px;margin:28px 0 10px}p{max-width:88ch;margin:12px 0}.lede{font-size:19px;color:var(--muted);max-width:780px}.badge{display:inline-block;margin-top:10px;font-size:13px;color:var(--green)}a{color:var(--green);text-underline-offset:4px}nav{display:flex;gap:9px;flex-wrap:wrap;margin:22px 0 0}button,.button{font:600 14px/1.5 inherit;border:1px solid var(--line);background:white;padding:11px 18px;border-radius:5px;cursor:pointer;color:var(--ink);text-decoration:none;display:inline-block}button[aria-selected="true"]{background:var(--green);color:white;border-color:var(--green)}button:focus-visible,a:focus-visible{outline:3px solid #c49b47;outline-offset:4px}.panel{padding-top:28px;border-top:1px solid var(--line)}.panel[hidden]{display:none}.label{font-size:13px;color:var(--green);font-weight:650}.caption,.muted{color:var(--muted);font-size:14px}.scroll{overflow-x:auto;margin:22px 0}table{width:100%;border-collapse:collapse;background:white;font-size:14px}th,td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:12px;letter-spacing:.035em;text-transform:uppercase;background:#e8eee8;font-weight:650}td.num{font-variant-numeric:tabular-nums;white-space:nowrap}.bars{display:grid;gap:15px;margin:24px 0 32px;max-width:840px}.bar-row{display:grid;grid-template-columns:150px 1fr 85px;align-items:center;gap:12px;font-size:14px}.track{background:#e2e8e1;height:19px;border-radius:2px;overflow:visible}.bar{height:100%;background:var(--green);border-radius:2px}.bar.secondary{background:#86aba1}.bar.censored{background:repeating-linear-gradient(45deg,#147569,#147569 5px,#84ada2 5px,#84ada2 9px);border-right:3px solid var(--gold)}.links{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}details{margin:20px 0;border-top:1px solid var(--line);padding-top:15px}summary{cursor:pointer;font-weight:650}pre{overflow-x:auto;background:#173638;color:#eef5ec;padding:21px;border-radius:4px;font:13px/1.8 ui-monospace,monospace}ol{padding-left:23px}li{padding:5px 0}.limits{border-top:1px solid var(--line);padding-top:20px;margin-top:28px}footer{border-top:1px solid var(--line);font-size:12px;color:var(--muted);padding-bottom:40px}.protocol{font-size:13px;color:var(--muted)}@media(max-width:680px){header,main,footer{padding:24px 20px}h1{font-size:38px}.bar-row{grid-template-columns:110px 1fr 65px;font-size:12px}th,td{padding:10px}.lede{font-size:17px}}@media print{nav{display:none}.panel[hidden]{display:block}.panel{break-before:page}header{break-after:avoid}button{display:none}body{background:white}}
+</style>
+</head>
+<body>
+<header>
+<div class="eyebrow">COMP7404 · NeurIPS 2025 paper reproduction</div>
+<h1>Open Vision Reasoner</h1>
+<p class="lede">Reproducing checkpoint evaluation, then investigating how output budget and answer completion affect observed visual-reasoning scores.</p>
+<span class="badge">Saved experimental evidence · CPU offline reproduction · No live inference</span>
+<nav role="tablist" aria-label="Separate experiments">
+<button role="tab" id="tab-original" aria-selected="true" aria-controls="original" data-tab="original">1 · Original 100 questions</button>
+<button role="tab" id="tab-budget" aria-selected="false" aria-controls="budget" data-tab="budget">2 · Effect of Output Budget</button>
+<button role="tab" id="tab-lengths" aria-selected="false" aria-controls="lengths" data-tab="lengths">3 · Reasoning lengths</button>
+</nav>
+</header>
+<main>
+<section id="original" class="panel" role="tabpanel" aria-labelledby="tab-original">
+<span class="label">ORIGINAL CHECKPOINT EVALUATION · n = 100</span>
+<h2>Shared questions and official scoring</h2>
+<p>All four checkpoints were evaluated on the same fixed MathVision questions and original images. The archived official scorer was applied to every saved response. The generation protocols differ, so these results are descriptive rather than a controlled capability ranking.</p>
+<div class="scroll"><table aria-label="Original 100-question results"><thead><tr><th>Checkpoint</th><th>Official correct</th><th>Length-limit hits</th><th>Generation protocol</th></tr></thead><tbody>
+<tr><td>Qwen2.5-VL-7B-Instruct</td><td class="num">28 / 100</td><td class="num">2 / 100</td><td>4,096 tokens · greedy · Transformers</td></tr>
+<tr><td>VL-Rethinker-7B</td><td class="num">32 / 100</td><td class="num">0 / 100</td><td>4,096 tokens · greedy · Transformers</td></tr>
+<tr><td>OVR-ColdStart</td><td class="num">34 / 100</td><td class="num">48 / 100</td><td>8,192 tokens · sampling · vLLM</td></tr>
+<tr><td>OVR-RL</td><td class="num">31 / 100</td><td class="num">70 / 100</td><td>8,192 tokens · sampling · vLLM</td></tr>
+</tbody></table></div>
+<p class="caption">This fixed subset is not the full MathVision benchmark. Scorer correctness does not certify a valid reasoning chain.</p>
+<div class="links"><a class="button" href="pipelines/ovr/demo/OVR_SHARED100_CASES.html">Open six saved OVR cases →</a><a class="button" href="reference_results/metrics.csv">Official metrics CSV</a><a class="button" href="reference_results/paired_correctness.csv">100-question paired scores</a></div>
+<details><summary>How to reproduce the saved results</summary>
+<ol><li>Install the CPU dependencies and verify hashes, question IDs, original images and prompts.</li><li>Merge the original disjoint Qwen 20 + 80 runs and replay the historical Qwen/VL review.</li><li>Re-run official scoring for OVR and the separate budget follow-up.</li><li>Recount the teacher/student traces, then score all four original 100-question runs uniformly.</li><li>Inspect the new English summary and source-immutability verification.</li></ol>
+<pre>python3.11 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-offline.txt
+python scripts/reproduce_english.py --verify-only
+python scripts/reproduce_english.py</pre>
+<p class="caption">Expected marker: ALL_OFFLINE_REPRODUCTION_VERIFIED. Dependency installation needs internet; reproduction thereafter does not. No model download, GPU or API calls are required.</p></details>
+<div class="limits"><h3>What was reproduced?</h3><p>The project evaluates released model checkpoints and reproduces analyses from saved outputs. It does not repeat the paper's large-scale SFT or PPO training. Original code, prompts and model responses remain unchanged.</p></div>
+</section>
+<section id="budget" class="panel" role="tabpanel" aria-labelledby="tab-budget" hidden>
+<span class="label">SEPARATE EXPLORATORY FOLLOW-UP · n = 20 PER MODEL</span>
+<h2>Effect of Output Budget</h2>
+<p>Did the output limit prevent some answers from finishing? Each OVR checkpoint generated one trajectory per question with a 16,384-token cap. Its first 8,192 tokens form the paired lower-budget view.</p>
+<p class="protocol">40 actual generations · 80 scored views · Four questions per difficulty · Previously evaluated subset</p>
+<div class="scroll"><table aria-label="Separate 20-question budget experiment"><thead><tr><th>Checkpoint</th><th>Output cap</th><th>Official accuracy</th><th>Limit-hit rate</th><th>Mean output tokens</th></tr></thead><tbody>
+<tr><td>OVR-ColdStart</td><td class="num">8,192</td><td class="num">20% (4/20)</td><td class="num">55% (11/20)</td><td class="num">6,742.1</td></tr>
+<tr><td>OVR-ColdStart</td><td class="num">16,384</td><td class="num">50% (10/20)</td><td class="num">0% (0/20)</td><td class="num">8,964.15</td></tr>
+<tr><td>OVR-RL</td><td class="num">8,192</td><td class="num">30% (6/20)</td><td class="num">75% (15/20)</td><td class="num">7,338.1</td></tr>
+<tr><td>OVR-RL</td><td class="num">16,384</td><td class="num">40% (8/20)</td><td class="num">20% (4/20)</td><td class="num">11,214.2</td></tr>
+</tbody></table></div>
+<h3>Accuracy at 8k and 16k</h3>
+<div class="bars" aria-label="Accuracy bars on a zero to one hundred percent scale">
+<div class="bar-row"><span>ColdStart · 8k</span><div class="track"><div class="bar secondary" style="width:20%"></div></div><strong>20%</strong></div>
+<div class="bar-row"><span>ColdStart · 16k</span><div class="track"><div class="bar" style="width:50%"></div></div><strong>50%</strong></div>
+<div class="bar-row"><span>RL · 8k</span><div class="track"><div class="bar secondary" style="width:30%"></div></div><strong>30%</strong></div>
+<div class="bar-row"><span>RL · 16k</span><div class="track"><div class="bar" style="width:40%"></div></div><strong>40%</strong></div>
+</div>
+<p><strong>Observed scores depend on output budget and answer finalization/extraction.</strong> Additional tokens helped some responses finish, but four RL responses still hit the 16k cap. Longer generation did not guarantee correctness. These observations do not establish that RL intrinsically reduces reasoning ability.</p>
+<details><summary>Completion and correctness are different</summary><p>ColdStart ID2911 completes with a correct boxed answer at 16k. RL ID598 changes from an unfinished 8k candidate accepted by the scorer to an incorrect final boxed answer at 16k. RL IDs334, 612, 1118 and 2816 still hit the cap. A naturally finished response, a complete boxed answer and a correct official score are separate measurements.</p></details>
+<p class="caption">The 8k views are trajectory prefixes, not independent requests or continuations of the original 100-question outputs. This follow-up does not replace the original scores. No original Qwen answers are combined with it into a new 20-question model comparison.</p>
+</section>
+<section id="lengths" class="panel" role="tabpanel" aria-labelledby="tab-lengths" hidden>
+<span class="label">DESCRIPTIVE LENGTH ANALYSIS · DIFFERENT TEACHER AND STUDENT TASKS</span>
+<h2>More reasoning text is not a capability score</h2>
+<p>Using one verified Qwen tokenizer, we counted the reasoning sections of 1,000 fixed teacher demonstrations and the 40 existing student trajectories. Think delimiters and final-answer sections are excluded.</p>
+<div class="scroll"><table aria-label="Reasoning-length analysis"><thead><tr><th>Group</th><th>Traces</th><th>Mean reasoning tokens</th><th>Generation truncation</th></tr></thead><tbody>
+<tr><td>Teacher demonstrations</td><td class="num">1,000</td><td class="num">4,444.473</td><td>Unknown</td></tr>
+<tr><td>OVR-ColdStart</td><td class="num">20</td><td class="num">8,672.9</td><td>0 / 20</td></tr>
+<tr><td>OVR-RL</td><td class="num">20</td><td class="num">At least 10,968.75</td><td>4 / 20</td></tr>
+</tbody></table></div>
+<div class="bars" aria-label="Mean recorded reasoning lengths, with RL right-censored">
+<div class="bar-row"><span>Teacher</span><div class="track"><div class="bar secondary" style="width:37.04%"></div></div><strong>4,444</strong></div>
+<div class="bar-row"><span>ColdStart</span><div class="track"><div class="bar" style="width:72.27%"></div></div><strong>8,673</strong></div>
+<div class="bar-row"><span>RL · lower bound</span><div class="track"><div class="bar censored" style="width:91.41%"></div></div><strong>≥10,969</strong></div>
+</div>
+<p>RL has longer observed reasoning on 17 of 20 paired student questions. Four RL reasoning sections remain right-censored at the 16k cap; its mean is therefore an observed lower bound. Teacher generation stopping status is unavailable.</p>
+<p class="caption">The teacher sample contains text tasks, while students answer visual questions. These statistics do not establish stronger reasoning, faithful CoT, visual attention or teacher-to-student capability transfer.</p>
+<details><summary>Sampling and trace provenance</summary><p>The teacher sample is a uniform draw without replacement from 1,637,924 rows across five verified shards, seed 20261026. The fixed 1,000 raw traces and the tokenizer are included, so recounting does not require re-downloading the full teacher dataset. Student traces are reused from the completed budget follow-up; no new generation is needed.</p></details>
+</section>
+</main>
+<footer>English edition based on the rolled-back original archive. The original 100-question evaluation, budget follow-up and length analysis are kept separate. This page loads no remote resources and performs no inference. Original code and evidence retain their source language. Sources: <a href="https://github.com/Open-Reasoner-Zero/Open-Vision-Reasoner">OVR</a> · <a href="https://github.com/mathllm/MATH-V">MathVision</a>. AI assistance: code and presentation preparation.</footer>
+<script>
+const tabs=Array.from(document.querySelectorAll('[data-tab]'));
+function selectTab(id){tabs.forEach(t=>{const active=t.dataset.tab===id;t.setAttribute('aria-selected',String(active));document.getElementById(t.dataset.tab).hidden=!active;});}
+tabs.forEach(t=>t.addEventListener('click',()=>selectTab(t.dataset.tab)));
+document.querySelector('[role="tablist"]').addEventListener('keydown',e=>{if(!['ArrowRight','ArrowLeft','Home','End'].includes(e.key))return;e.preventDefault();let index=tabs.indexOf(document.activeElement);if(index<0)return;index=e.key==='Home'?0:e.key==='End'?tabs.length-1:(index+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;tabs[index].focus();selectTab(tabs[index].dataset.tab);});
+</script>
+</body></html>

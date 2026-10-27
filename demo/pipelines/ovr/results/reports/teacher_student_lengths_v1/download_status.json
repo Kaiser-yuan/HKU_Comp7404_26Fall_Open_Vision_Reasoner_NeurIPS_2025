@@ -1,0 +1,35 @@
+{
+  "teacher_status": "ALL_FIVE_FILES_SHA_VERIFIED",
+  "teacher_observed_n": 1000,
+  "teacher_expected_n": 1000,
+  "files": [
+    {
+      "file": "cold_start_1.parquet",
+      "bytes": 495525915,
+      "sha256": "ff3d25021ada2704a9070fa483b1c85558c5bd1b5e20f4254c42a148b0942d7c"
+    },
+    {
+      "file": "cold_start_2.parquet",
+      "bytes": 3421654102,
+      "sha256": "28b8b4b411dc1cb5c7c5793a0e1d6d57b69d24fbf994451f7821660d8c985f24"
+    },
+    {
+      "file": "cold_start_3.parquet",
+      "bytes": 4895894813,
+      "sha256": "4350605a96f0ca91c9076118c34c06eef5ef95edb7cbe82e8b1c16ad77bbb2c5"
+    },
+    {
+      "file": "cold_start_4.parquet",
+      "bytes": 2262109188,
+      "sha256": "bfb0c1415d3a100ea5e98468853af6237b144c192ed0b92d710856becc21820e"
+    },
+    {
+      "file": "cold_start_5.parquet",
+      "bytes": 709125090,
+      "sha256": "5e201a99aa5459361216b589f605c0ac06ac6c4e2bf1bb432610503fde23f40e"
+    }
+  ],
+  "prior_failures_preserved": "download_status_before_resume.json",
+  "gpu_used": false,
+  "sampling_protocol_unchanged": true
+}

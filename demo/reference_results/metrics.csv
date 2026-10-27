@@ -1,0 +1,5 @@
+﻿model,n,correct,accuracy,truncated,mean_output_tokens,output_budget,decoding,backend,controlled_four_way_comparison
+qwen,100,28,0.28,2,573.34,4096,greedy,Transformers SDPA,False
+vl_rethinker,100,32,0.32,0,497.2,4096,greedy,Transformers SDPA,False
+coldstart,100,34,0.34,48,6248.27,8192,sampling T0.6 p0.95 k40,vLLM 0.11.0,False
+rl,100,31,0.31,70,7231.45,8192,sampling T0.6 p0.95 k40,vLLM 0.11.0,False

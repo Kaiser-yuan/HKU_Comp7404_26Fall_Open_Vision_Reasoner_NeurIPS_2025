@@ -1,0 +1,96 @@
+{
+  "repo": "Kangheng/OVR-7B-RL",
+  "revision": "53d5680f59196df1533ca5ec55d9046507c1e6d7",
+  "files": [
+    {
+      "name": "added_tokens.json",
+      "size": 707,
+      "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680"
+    },
+    {
+      "name": "chat_template.json",
+      "size": 937,
+      "sha256": "13d0c439a205120d4f816c375a6ad56d2f7ac17ef8a719eea354112aa3f96145"
+    },
+    {
+      "name": "config.json",
+      "size": 1375,
+      "sha256": "7f06b04f260b9c6dfb65c95bb866b8889ac7692e3c8d59f1c8641bec8c2a71a3"
+    },
+    {
+      "name": "generation_config.json",
+      "size": 243,
+      "sha256": "bd9b62d54c30f515c984606435b8ed171fa4fced3981ccb4582c49949beeb69d"
+    },
+    {
+      "name": "merges.txt",
+      "size": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "name": "model-00001-of-00004.safetensors",
+      "size": 4976698704,
+      "sha256": "f69bbe080ccd14a81be297766035fe593b29103f01815807b52a887916f95b89"
+    },
+    {
+      "name": "model-00002-of-00004.safetensors",
+      "size": 4932750912,
+      "sha256": "3be10ff7542e4e1fc2a5e14d7c7c2db0147c990236a8c60195449f6e42c9368d"
+    },
+    {
+      "name": "model-00003-of-00004.safetensors",
+      "size": 4991495680,
+      "sha256": "c17668cb6173a8607e60032ffa0ee36d4f7af69716961de7ed3082f590639814"
+    },
+    {
+      "name": "model-00004-of-00004.safetensors",
+      "size": 1683468112,
+      "sha256": "04b6b8ab0a57c34f79e9ce530bf14e52846ef987f134776122fdf46867396aeb"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "size": 54686,
+      "sha256": "9b648cb30515f4bc7916c8e0a7088e29a21b92577c2e35903cadbd2f596bf3cc"
+    },
+    {
+      "name": "payload.json",
+      "size": 73447,
+      "sha256": "068bf6c09a7d1e52cea15656f4b7ebea8f95fa28dee6171970064cd18a0f0e64"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size": 350,
+      "sha256": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": 7031645,
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": 8081,
+      "sha256": "1005b5001a1a7c83eed25fff152e00303502fa756018c93855050691c5a347b8"
+    },
+    {
+      "name": "vocab.json",
+      "size": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  ],
+  "view": {
+    "source_weight_files": [
+      "model-00001-of-00004.safetensors",
+      "model-00002-of-00004.safetensors",
+      "model-00003-of-00004.safetensors",
+      "model-00004-of-00004.safetensors"
+    ],
+    "single_weight_alias": false,
+    "upstream_files_modified": false
+  }
+}

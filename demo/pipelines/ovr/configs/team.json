@@ -1,0 +1,12 @@
+{
+  "group_id": null,
+  "exhibition_date": null,
+  "eligibility_verified": false,
+  "selection_registration_verified": false,
+  "members": [
+    {"package": "A", "name": null, "role": "Evaluation and compute"},
+    {"package": "B", "name": null, "role": "Paper and behavior analysis"},
+    {"package": "C", "name": null, "role": "Poster and offline exhibition"}
+  ],
+  "deadline": "2026-10-28T23:59:00+08:00"
+}

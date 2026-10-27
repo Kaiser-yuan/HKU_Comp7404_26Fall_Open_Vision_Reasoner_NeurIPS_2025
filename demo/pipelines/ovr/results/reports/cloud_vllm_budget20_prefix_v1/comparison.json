@@ -1,0 +1,111 @@
+{
+  "complete": true,
+  "status": "COMPLETE",
+  "method": "one_16k_request_two_token_prefix_views",
+  "summaries": [
+    {
+      "model": "coldstart",
+      "budget_tokens": 8192,
+      "observed_n": 20,
+      "expected_n": 20,
+      "correct": 4,
+      "accuracy_over_observed": 0.2,
+      "wilson_ci95": [
+        0.08065766257979806,
+        0.41601743225189364
+      ],
+      "natural_stop_n": 9,
+      "length_limit_n": 11,
+      "empty_n": 0,
+      "nonempty_box_anywhere_n": 9,
+      "natural_stop_with_box_n": 9,
+      "think_closed_n": 9,
+      "mean_output_tokens": 6742.1,
+      "mean_token_boundary_observed_s": 122.94368444029242
+    },
+    {
+      "model": "coldstart",
+      "budget_tokens": 16384,
+      "observed_n": 20,
+      "expected_n": 20,
+      "correct": 10,
+      "accuracy_over_observed": 0.5,
+      "wilson_ci95": [
+        0.2992980081982123,
+        0.7007019918017877
+      ],
+      "natural_stop_n": 20,
+      "length_limit_n": 0,
+      "empty_n": 0,
+      "nonempty_box_anywhere_n": 20,
+      "natural_stop_with_box_n": 20,
+      "think_closed_n": 20,
+      "mean_output_tokens": 8964.15,
+      "mean_token_boundary_observed_s": 163.6969025991857
+    },
+    {
+      "model": "rl",
+      "budget_tokens": 8192,
+      "observed_n": 20,
+      "expected_n": 20,
+      "correct": 6,
+      "accuracy_over_observed": 0.3,
+      "wilson_ci95": [
+        0.1454772448676043,
+        0.5189728183535235
+      ],
+      "natural_stop_n": 5,
+      "length_limit_n": 15,
+      "empty_n": 0,
+      "nonempty_box_anywhere_n": 5,
+      "natural_stop_with_box_n": 5,
+      "think_closed_n": 5,
+      "mean_output_tokens": 7338.1,
+      "mean_token_boundary_observed_s": 128.2482424903661
+    },
+    {
+      "model": "rl",
+      "budget_tokens": 16384,
+      "observed_n": 20,
+      "expected_n": 20,
+      "correct": 8,
+      "accuracy_over_observed": 0.4,
+      "wilson_ci95": [
+        0.21880653237281705,
+        0.6134184992377469
+      ],
+      "natural_stop_n": 16,
+      "length_limit_n": 4,
+      "empty_n": 0,
+      "nonempty_box_anywhere_n": 16,
+      "natural_stop_with_box_n": 16,
+      "think_closed_n": 16,
+      "mean_output_tokens": 11214.2,
+      "mean_token_boundary_observed_s": 197.43571033049375
+    }
+  ],
+  "transitions": {
+    "coldstart": {
+      "observed_n": 20,
+      "improved": 6,
+      "regressed": 0
+    },
+    "rl": {
+      "observed_n": 20,
+      "improved": 3,
+      "regressed": 1
+    }
+  },
+  "original_trajectory_sha256": {
+    "coldstart": "35cb97edaca83f14d89d2add701ca7800e24b0cc2782dda95e93fec91437878c",
+    "rl": "581ff26a75746084a5c781b906ba0d126951043343c834e6deb6c861cb097878"
+  },
+  "limits": [
+    "Exploratory selected subset of already observed questions, not a holdout.",
+    "8k is a token-prefix view, not an independently executed 8k request.",
+    "Chunk-arrival timing is approximate; total charged runtime is separately recorded.",
+    "Nonempty boxes and closing think markers do not prove visual reflection or correct finalization.",
+    "Do not combine best answers across budgets or replace original 100-question results.",
+    "Accuracy over observed rows is not a complete 20-question score when complete=false."
+  ]
+}

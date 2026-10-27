@@ -1,0 +1,38 @@
+[
+  {
+    "path": "project/test/dataset_result/qwen_100_pilot_backup/results/qwen_mathvision20_4096",
+    "predictions_sha256": "0d76144fb452a4556d326cf66db44fc2e884c3f7e6215344854815c698242f61",
+    "run_config": {
+      "model_path": "/root/autodl-tmp/ovr/models/qwen",
+      "dataset_sha256": "48a077984b161e773da7cbab91abb48ee6a1362895ba12cd266dfcc921df4eca",
+      "max_new_tokens": 4096,
+      "max_pixels": 1003520,
+      "min_pixels": 200704,
+      "dtype": "bfloat16",
+      "attention": "sdpa",
+      "do_sample": false,
+      "prompt_version": "boxed-options-v1",
+      "torch": "2.8.0+cu128",
+      "transformers": "4.57.1",
+      "scoring": "conservative exact/rational match, NOT official MathVision evaluator"
+    }
+  },
+  {
+    "path": "project/test/dataset_result/qwen_100_pilot_backup/results/qwen_mathvision_extra80_4096",
+    "predictions_sha256": "c033eec86762c36e26df9d6042652e10bd0068101da884e20ec8257075bb2ef0",
+    "run_config": {
+      "model_path": "/root/autodl-tmp/ovr/models/qwen",
+      "dataset_sha256": "0613c5f32e969979c7c7c1a29d399245efebb4f5f23be2d78c747a7aacc090d4",
+      "max_new_tokens": 4096,
+      "max_pixels": 1003520,
+      "min_pixels": 200704,
+      "dtype": "bfloat16",
+      "attention": "sdpa",
+      "do_sample": false,
+      "prompt_version": "boxed-options-v1",
+      "torch": "2.8.0+cu128",
+      "transformers": "4.57.1",
+      "scoring": "conservative exact/rational match, NOT official MathVision evaluator"
+    }
+  }
+]

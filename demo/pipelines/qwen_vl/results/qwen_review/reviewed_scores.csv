@@ -1,0 +1,21 @@
+﻿id,reference_answer,original_extracted_answer,reviewed_answer,mapped_option,original_match,reviewed_answer_match,extraction_method,truncated,generated_tokens,inference_seconds,subject,level,review_note
+51,3,,10,,False,False,entire_response_single_answer,False,3,0.7962275696918368,topology,5,Whole response is 10; fallback resolves missing box but answer differs from reference 3.
+302,E,E,E,,True,True,boxed,False,520,7.727250635623932,algebra,5,Final answer matches reference; this does not certify the reasoning.
+612,A,E,E,,False,False,boxed,False,328,4.8836684646084905,algebra,2,Explicit final answer differs from reference; preserved as incorrect for this pilot.
+674,E,C,C,,False,False,boxed,False,480,7.110246225260198,solid geometry,5,Explicit final answer differs from reference; preserved as incorrect for this pilot.
+1165,D,C,C,,False,False,boxed,False,943,13.826351778581738,metric geometry - length,2,Explicit final answer differs from reference; preserved as incorrect for this pilot.
+1324,B,80-2\pi,80-2\pi,B,False,True,boxed;unique_option_content_match,False,440,6.442847039550543,metric geometry - area,4,Boxed 80-2\pi uniquely matches option B. Final answer accepted; unsupported equilateral assumption remains in reasoning.
+1414,5,5,5,,True,True,boxed,False,206,3.060473995283246,topology,2,Final answer matches reference; this does not certify the reasoning.
+1542,3,,,,False,False,none,True,4096,60.39227511640638,combinatorial geometry,4,Truncated; long repetitive output; no complete final answer in this run.
+1552,4,14,14,,False,False,boxed,False,405,5.970472309738398,combinatorial geometry,4,Explicit final answer differs from reference; preserved as incorrect for this pilot.
+1684,3,2,2,,False,False,boxed,False,718,10.755242151208222,logic,4,Explicit final answer differs from reference; preserved as incorrect for this pilot.
+1858,D,A,A,A,False,False,boxed;unique_option_content_match,False,524,7.891421930864453,transformation geometry,4,Explicit final answer differs from reference; preserved as incorrect for this pilot.
+1974,E,B,B,,False,False,boxed,False,430,6.290639754384756,combinatorial geometry,3,Explicit final answer differs from reference; preserved as incorrect for this pilot.
+2073,871,125,125,,False,False,boxed,False,592,8.682184601202607,metric geometry - length,5,Explicit final answer differs from reference; preserved as incorrect for this pilot.
+2336,C,,,,False,False,none,True,4096,60.409915233030915,metric geometry - length,5,Truncated; long repetitive output; no complete final answer in this run.
+2381,C,A,A,,False,False,boxed,False,647,9.485692544840276,metric geometry - angle,4,Explicit final answer differs from reference; preserved as incorrect for this pilot.
+2536,1047,1047,1047,,True,True,boxed,False,429,6.29812247864902,combinatorics,2,Final answer matches reference; this does not certify the reasoning.
+2716,750,666,666,,False,False,boxed,False,609,8.91649757605046,metric geometry - area,3,Explicit final answer differs from reference; preserved as incorrect for this pilot.
+2760,A,\text{A},\text{A},,True,True,boxed,False,425,6.303078944794834,solid geometry,4,Final answer matches reference; this does not certify the reasoning.
+2950,8,12,12,,False,False,boxed,False,578,8.770283839665353,analytic geometry,5,Explicit final answer differs from reference; preserved as incorrect for this pilot.
+3034,70,145,145,,False,False,boxed,False,523,7.973693518899381,metric geometry - angle,2,Explicit final answer differs from reference; preserved as incorrect for this pilot.

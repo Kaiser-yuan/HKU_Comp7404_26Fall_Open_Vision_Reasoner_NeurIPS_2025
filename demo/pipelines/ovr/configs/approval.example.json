@@ -1,0 +1,12 @@
+{
+  "approved": false,
+  "stage": "pilot",
+  "approved_by": "REPLACE AFTER EXPLICIT USER APPROVAL",
+  "expires_at": "2026-10-23T23:59:00+08:00",
+  "protocol_sha256": "COPY FROM python -m ovr.cli fingerprint",
+  "total_budget_cny": 0,
+  "hourly_rate_cny": 0,
+  "spent_before_session_cny": 0,
+  "session_max_minutes": 0,
+  "storage_and_setup_reserve_cny": 0
+}

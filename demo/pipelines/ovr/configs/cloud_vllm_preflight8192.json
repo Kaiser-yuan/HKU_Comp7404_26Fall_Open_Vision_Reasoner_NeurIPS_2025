@@ -1,0 +1,73 @@
+{
+  "protocol_id": "ovr-vllm-checkpoint-defaults8192-preflight-v1",
+  "status": "PREPARED_NOT_RUN; formal evaluation remains held",
+  "purpose": "Five fixed new questions per model and three one-token visual probes; independent diagnostic only",
+  "shared_dir": "workstreams/shared_test100",
+  "inputs_sha256": "b6d69309e6fc080da3ffb54286f77e2bfa1e41cc2f4dd05f59d2b1d27ebf3598",
+  "references_sha256": "131b3b901071f9b4adc0e6dcc72cff2ac669101a0513a74bec11bced61251710",
+  "models": {
+    "coldstart": {
+      "repo": "Kangheng/OVR-7B-ColdStart",
+      "revision": "52ad9cb58c52d8e5f8c18abee99f77f78e9f6be3"
+    },
+    "rl": {
+      "repo": "Kangheng/OVR-7B-RL",
+      "revision": "53d5680f59196df1533ca5ec55d9046507c1e6d7"
+    }
+  },
+  "backend": "vllm-0.11.0",
+  "dtype": "bfloat16",
+  "attention": "vllm-auto; record actual backend from server log",
+  "quantization": null,
+  "seed": 42,
+  "batch_size": 1,
+  "max_new_tokens": 8192,
+  "max_context_tokens": 16384,
+  "per_question_max_s": 300,
+  "canary_questions": 5,
+  "expected_pilot_questions": 100,
+  "image_processor": {
+    "min_pixels": 200704,
+    "max_pixels": 1003520
+  },
+  "generation": {
+    "do_sample": true,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 40,
+    "repetition_penalty": 1.0,
+    "num_beams": 1
+  },
+  "limits": "No 100-question auto-start; do not modify teammate prompts or original images. White image is a separate one-token data-flow diagnostic. No no-repeat-ngram, extra reasoning instructions, answer retries, or selecting best outputs. Correctness is not an infrastructure gate; preserve model failures. Coordinate Qwen decoding/length differences before claiming uniform comparison.",
+  "runtime": {
+    "python": "3.12",
+    "torch_cuda": "12.8",
+    "environment_source": "AutoDL PyTorch image via isolated system-site-packages venv",
+    "base_python": "/root/miniconda3/bin/python"
+  },
+  "level_counts": {
+    "1": 9,
+    "5": 25,
+    "3": 12,
+    "2": 29,
+    "4": 25
+  },
+  "max_image_side": null,
+  "image_processor_use_fast": true,
+  "results_namespace": "cloud_vllm_preflight8192_v1",
+  "config_source": "configs/cloud_vllm_preflight8192.json",
+  "prompt_version": "boxed-options-v1",
+  "source_bundle_sha256": "ea39a4232591b4dffa41bde55a6288d3e0a1be075620bfed22ffc7308d12d19e",
+  "scope_description": "Same 100 questions and original image bytes as teammate Qwen run",
+  "preflight_ids": [
+    "689",
+    "2968",
+    "465",
+    "1542",
+    "2016"
+  ],
+  "diagnostic_only": true,
+  "diagnostic_max_answer_generations": 10,
+  "diagnostic_max_probe_generations": 3,
+  "hard_wallclock_limit_minutes": 40
+}

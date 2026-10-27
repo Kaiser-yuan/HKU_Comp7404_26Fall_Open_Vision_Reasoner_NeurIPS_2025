@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "offline": true,
+  "cases": 6,
+  "models": 2,
+  "all_embedded_images": true,
+  "all_saved_responses_present": true,
+  "navigation": true,
+  "reference_toggle": true,
+  "mobile_overflow": false,
+  "page_errors": [],
+  "http_requests": [],
+  "human_content_review": "PENDING"
+}

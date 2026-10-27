@@ -1,0 +1,35 @@
+OVR 官方 vLLM 部署与重复输出诊断（2026-10-22）
+
+状态：本轮 GPU 任务结束，服务已停止；已提醒用户关卡。正式 100 题生成次数为 0。
+
+结论
+已核验正确的 checkpoint、输入和官方 vLLM serving 入口。换成 vLLM 并不能单独消除 RL 的 greedy 重复；采用 checkpoint 默认采样后有所改善，但还不能认定已彻底解决。
+
+范围与结果（仅两个固定题目：40、51；各条件独立，不是准确率估计）
+• Transformers，RL 默认采样，4096 上限：两题均截断，官方评分 0/2。
+• vLLM，RL greedy，4096 上限：两题均截断，官方评分 0/2。
+• vLLM，RL 默认采样，4096 上限：40 题 3667 tokens 正常结束且答对；51 题 4096 tokens 截断，合计 1/2。
+• vLLM，ColdStart 默认采样，4096 上限：2569、1089 tokens，两题正常结束，官方评分 2/2。
+• 独立长度对照：仅 RL 51 题，8192 上限，4673 tokens 正常结束，官方判对。此运行与此前轨迹仅前 67 tokens 相同，不能说只增加长度就修好了，也不能将它替换此前错误回答。回答仍带有看不到图片、推测答案的表述，不能当作可靠视觉推理的成功证据。
+
+核验依据
+两个模型的 generation_config 默认值均为 temperature=0.6、top_p=0.95、top_k=40、repetition_penalty=1.0；先前 top_k=0 是独立排错条件，并非 checkpoint 默认值。
+采用独立 vLLM 0.11.0 环境，Torch 2.8.0+cu128、Transformers 4.57.1、BF16，原 Transformers 环境未替换。原始模型及输入文件保持不变。
+七次 vLLM 请求的实际输入 token ID 都与对应 Transformers 处理器匹配；实际传入原始 JPEG，保留多模态模板与 <think>。这说明没有发现简单的输入错配，不能证明视觉特征或注意力完全一致。
+RL 模型卡的示例命令也写成 ColdStart。实际测试使用核验过的 RL 本地 revision，已通过 /v1/models 确认，未混用权重。
+作者未指定 vLLM 版本和完整评测参数，因此本次是部署兼容性诊断，不是完整复现论文环境。不同采样器、缓存和数值内核可能改变轨迹，不据此比较速度。
+
+后续
+100 题继续暂停。先与队友统一正式采样、长度上限和评分口径，再决定下一次运行。保留全部独立条件，不挑选最好的答案拼接成绩。只做下载、依赖、文档、评分与同步时不需要 GPU；下一次启用 GPU 前先明确具体任务。
+
+材料
+conclusion.json：结构化结论与来源。
+condition_summary.csv：各条件统计。
+local_rescoring.json：Mac 独立重评分记录。
+artifacts/OVR_VLLM_DEPLOYMENT_AUDIT_20261022.zip：38 文件的原始回答、评分、运行记录和环境；全包及逐文件哈希已在 Mac 核验。后续本地说明文件不在这个冻结原始证据包内。
+
+来源
+https://huggingface.co/Kangheng/OVR-7B-RL#model-deployment
+https://huggingface.co/Kangheng/OVR-7B-ColdStart#model-deployment
+https://docs.vllm.ai/en/v0.11.0/serving/openai_compatible_server.html
+https://docs.vllm.ai/en/v0.11.0/getting_started/installation/gpu.html

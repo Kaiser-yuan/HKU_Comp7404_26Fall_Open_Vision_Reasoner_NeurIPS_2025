@@ -1,0 +1,77 @@
+{
+  "command": [
+    "/root/ovr-course-env/vllm011/bin/python",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "/root/autodl-tmp/OVR_CLOUD_STARTER/models/rl-53d5680f5919/load",
+    "--served-model-name",
+    "ovr-rl",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "56909",
+    "--tensor-parallel-size",
+    "1",
+    "--gpu-memory-utilization",
+    "0.6",
+    "--dtype",
+    "bfloat16",
+    "--max-model-len",
+    "16384",
+    "--max-num-seqs",
+    "1",
+    "--max-num-batched-tokens",
+    "16384",
+    "--generation-config",
+    "auto",
+    "--seed",
+    "42",
+    "--enforce-eager",
+    "--limit-mm-per-prompt",
+    "{\"image\":1,\"video\":0}",
+    "--mm-processor-kwargs",
+    "{\"min_pixels\": 200704, \"max_pixels\": 1003520}",
+    "--disable-log-requests"
+  ],
+  "model": "rl",
+  "started_utc": "2026-10-23T01:10:23.532791+00:00",
+  "pid": 2765,
+  "served_models": {
+    "object": "list",
+    "data": [
+      {
+        "id": "ovr-rl",
+        "object": "model",
+        "created": 1792717871,
+        "owned_by": "vllm",
+        "root": "/root/autodl-tmp/OVR_CLOUD_STARTER/models/rl-53d5680f5919/load",
+        "parent": null,
+        "max_model_len": 16384,
+        "permission": [
+          {
+            "id": "modelperm-49a58ed072d444e3a1b66784eb60a582",
+            "object": "model_permission",
+            "created": 1792717871,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      }
+    ]
+  },
+  "attention_backend_log_evidence": [
+    "\u001b[1;36m(EngineCore_DP0 pid=1870)\u001b[0;0m INFO 10-23 09:06:04 [cuda.py:366] Using Flash Attention backend on V1 engine.",
+    "\u001b[1;36m(EngineCore_DP0 pid=3029)\u001b[0;0m INFO 10-23 09:10:43 [cuda.py:366] Using Flash Attention backend on V1 engine."
+  ],
+  "stopped": true,
+  "exit_code": 0,
+  "ended_utc": "2026-10-23T01:21:11.242699+00:00"
+}
